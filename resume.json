@@ -21,11 +21,11 @@
     }]
   },
   "work": [{
-    "company": "Company",
-    "position": "President",
-    "website": "http://company.com",
-    "startDate": "2013-01-01",
-    "endDate": "2014-01-01",
+    "company": "Tecnual",
+    "position": "CEO",
+    "website": "http://tecnual.com",
+    "startDate": "2006-01-01",
+    "endDate": "Now",
     "summary": "Description...",
     "highlights": [
       "Started the company"
@@ -87,7 +87,7 @@
     ]
   }],
   "references": [{
-    "name": "Jane Doe",
-    "reference": "Reference..."
+    "name": "God",
+    "reference": "The best angel I ever seen..."
   }]
 }
