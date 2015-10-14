@@ -1,0 +1,96 @@
+{
+  "basics": {
+    "name": "Pedro Macías",
+    "label": "Full Stack Web Consulting",
+    "picture": "/images/pedroRedondo100x100.png",
+    "email": "pedro@tecnual.com",
+    "phone": "(+34) 633 36 40 80",
+    "website": "http://libertual.github.io",
+    "summary": "...",
+    "location": {
+      "address": "Los Cubos, 44 2ºB",
+      "postalCode": "24007",
+      "city": "León",
+      "countryCode": "ES",
+      "region": "León"
+    },
+    "profiles": [{
+      "network": "Twitter",
+      "username": "libertual",
+      "url": "http://twitter.com/libertual"
+    }]
+  },
+  "work": [{
+    "company": "Tecnual",
+    "position": "CEO",
+    "website": "http://tecnual.com",
+    "startDate": "2007-01-01",
+    "endDate": "2007-01-01",
+    "summary": "",
+    "highlights": [
+      "Started the company"
+    ]
+  }],
+  "volunteer": [{
+    "organization": "Organization",
+    "position": "Volunteer",
+    "website": "http://organization.com/",
+    "startDate": "2012-01-01",
+    "endDate": "2013-01-01",
+    "summary": "Description...",
+    "highlights": [
+      "Awarded 'Volunteer of the Month'"
+    ]
+  }],
+  "education": [{
+    "institution": "María Auxiliadora",
+    "area": "Desarrollo de Aplicaciones informáticas",
+    "studyType": "Modulo Superior",
+    "startDate": "1997-09-15",
+    "endDate": "1999-07-01",
+    "gpa": "",
+    "courses": [
+      ""
+    ]
+  }],
+  "awards": [{
+    "title": "Award",
+    "date": "2014-11-01",
+    "awarder": "Company",
+    "summary": "There is no spoon."
+  }],
+  "publications": [{
+    "name": "Publication",
+    "publisher": "Company",
+    "releaseDate": "2014-10-01",
+    "website": "http://publication.com",
+    "summary": "Description..."
+  }],
+  "skills": [{
+    "name": "Web Development",
+    "level": "Master",
+    "keywords": [
+      "HTML",
+      "CSS",
+      "Javascript",
+      "AngularJS",
+      "Polymer JS",
+      "MongoDB"
+    ]
+  }],
+  "languages": [{
+    "language": "English",
+    "fluency": "B2 Level"
+  }],
+  "interests": [{
+    "name": "Wildlife",
+    "keywords": [
+      "Ferrets",
+      "Unicorns"
+    ]
+  }],
+  "references": [{
+    "name": "",
+    "reference": ""
+  }]
+}

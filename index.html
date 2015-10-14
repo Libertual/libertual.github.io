@@ -16,7 +16,7 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
   <meta name="description" content="">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="generator" content="Polymer Starter Kit" />
-  <title>Polymer Starter Kit</title>
+  <title>Pedro Macías - Web consulting</title>
   <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
 
   <!-- Chrome for Android theme color -->
@@ -44,6 +44,7 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
 
   <!-- build:css styles/main.css -->
   <link rel="stylesheet" href="styles/main.css">
+  <link rel="stylesheet" href="styles/style.css">
   <!-- endbuild-->
 
   <!-- build:js bower_components/webcomponentsjs/webcomponents.min.js -->
@@ -56,6 +57,7 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
 </head>
 
 <body unresolved class="fullbleed layout vertical">
+
 <template is="dom-bind" id="app">
 
   <paper-drawer-panel id="paperDrawerPanel" forceNarrow>
@@ -63,12 +65,12 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
 
       <!-- Drawer Toolbar -->
       <paper-toolbar id="drawerToolbar">
-        <span>Menu</span>
+        <span>Menus</span>
       </paper-toolbar>
 
       <!-- Drawer Content -->
       <paper-menu class="list" attr-for-selected="data-route" selected="{{route}}" on-iron-select="onMenuSelect">
-        <a data-route="home" href="/">
+        <a data-route="home" href="./">
           <iron-icon icon="home"></iron-icon>
           <span>Home</span>
         </a>
@@ -98,7 +100,7 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
         <div class="middle"></div>
 
         <!-- Application name -->
-        <div class="appname bottom paper-font-display2">Polymer Starter Kit</div>
+        <div class="appname bottom paper-font-display2">Pedro Macías - Web Consultant</div>
 
       </paper-toolbar>
 
