@@ -1,0 +1,203 @@
+{
+  "basics": {
+    "name": "Pedro Macías",
+    "status": "Full Stack Web Developer",
+    "birthdate": "1977-08-12T23:10:00.000Z",
+    "pictures": {
+      "principal": {
+        "url":"/images/PedroMaciasFullStackDeveloper.jpg",
+        "title": "Pedro Macías - Full Stack Web Developer",
+        "alt": "Pedro Macías"
+      }
+    },
+    "email": "pedro@tecnual.com",
+    "phone": "(+34) 633 36 40 80",
+    "website": "http://libertual.github.io",
+    "summary": "Hola, Soy un programador y administrador de sistemas en León, España. Trabajo con la experiencia en entornos de desarrollo para aplicaciones web, gestion de proyectos de investigación e innovación.",
+    "location": {
+      "address": "Los Cubos, 44 2ºB",
+      "postalCode": "24007",
+      "city": "León",
+      "countryCode": "ES",
+      "region": "León",
+      "country": "España"
+    },
+    "profiles": [{
+      "network": "Twitter",
+      "username": "@Libertual",
+      "url": "http://twitter.com/libertual",
+      "icon": "fa fa-twitter"
+    },
+    {
+      "network": "Google+",
+      "username": "@Libertual",
+      "url": "https://plus.google.com/+PedroMacíasLibertual/",
+      "icon": "fa fa-google-plus"
+    },
+    {"network": "Facebook",
+    "username": "Libertual",
+    "url": "https://www.facebook.com/Libertual",
+    "icon": "fa fa-facebook"
+
+      }]
+  },
+  "work": [{
+    "company": "Tecnual",
+    "position": "CEO",
+    "website": "http://tecnual.com",
+    "startDate": "2007-01-01",
+    "endDate": "2007-01-01",
+    "summary": "",
+    "highlights": [
+      "Started the company"
+    ]
+  }],
+  "volunteer": [{
+    "organization": "Organization",
+    "position": "Volunteer",
+    "website": "http://organization.com/",
+    "startDate": "2012-01-01",
+    "endDate": "2013-01-01",
+    "summary": "Description...",
+    "highlights": [
+      "Awarded 'Volunteer of the Month'"
+    ]
+  }],
+  "education": [{
+    "institution": "María Auxiliadora",
+    "area": "Desarrollo de Aplicaciones informáticas",
+    "studyType": "Modulo Superior",
+    "startDate": "1997-09-15",
+    "endDate": "1999-07-01",
+    "gpa": "",
+    "courses": [
+      ""
+    ]
+  }],
+  "awards": [{
+    "title": "Award",
+    "date": "2014-11-01",
+    "awarder": "Company",
+    "summary": "There is no spoon."
+  }],
+  "publications": [{
+    "name": "Publication",
+    "publisher": "Company",
+    "releaseDate": "2014-10-01",
+    "website": "http://publication.com",
+    "summary": "Description..."
+  }],
+  "skills": [{
+    "name": "Linux (sysAdmin)",
+    "level": "90",
+    "keywords": [
+      "linux",
+      "sysAdmin",
+      "openSource"
+    ]
+  },
+  {
+    "name": "javaScript",
+    "level": "80",
+    "keywords": [
+      "javaScript",
+      "ES6",
+      "Good Parts"
+    ]
+  },
+  {
+    "name": "HTML5",
+    "level": "95",
+    "keywords": [
+      "HTML5",
+      "frontEnd"
+    ]
+  },
+  {
+    "name": "CSS",
+    "level": "90",
+    "keywords": [
+      "CSS3",
+      "Sass",
+      "Less"
+    ]
+  },
+  {
+    "name": "Node.js",
+    "level": "85",
+    "keywords": [
+      "backEnd",
+      "Node.js",
+      "Express.js",
+      "Mean"
+    ]
+  },
+  {
+    "name": "MongoDB",
+    "level": "85",
+    "keywords": [
+      "DBA",
+      "Mongodb",
+      "DBD",
+      "noSQL",
+      "bigData"
+    ]
+  },
+  {
+    "name": "Angular.js",
+    "level": "85",
+    "keywords": [
+      "Angular.js",
+      "Framework"
+    ]
+  },
+  {
+    "name": "Gimp",
+    "level": "75",
+    "keywords": [
+      "Design",
+      "Creative"
+    ]
+  },
+  {
+    "name": "Photoshop",
+    "level": "75",
+    "keywords": [
+      "Photography",
+      "retouch"
+    ]
+  },
+  {
+    "name": "openStack",
+    "level": "70",
+    "keywords": [
+      "openStack",
+      "cloudComputing"
+    ]
+  },
+  {
+      "name": "Cisco (CCNA)",
+      "level": "85",
+      "keywords": [
+        "Networking",
+        "Routing",
+        "Certificate"
+      ]
+  }
+  ],
+  "languages": [{
+    "language": "English",
+    "fluency": "B2 Level"
+  }],
+  "interests": [{
+    "name": "Wildlife",
+    "keywords": [
+      "Ferrets",
+      "Unicorns"
+    ]
+  }],
+  "references": [{
+    "name": "",
+    "reference": ""
+  }]
+}

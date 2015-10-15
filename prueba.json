@@ -1,0 +1,98 @@
+[{
+  "name": "Linux (sysAdmin)",
+  "level": "85",
+  "keywords": [
+    "linux",
+    "sysAdmin",
+    "openSource"
+  ]
+},
+{
+  "name": "javaScript",
+  "level": "75",
+  "keywords": [
+    "javaScript",
+    "ES6",
+    "Good Parts"
+  ]
+},
+{
+  "name": "HTML5",
+  "level": "90",
+  "keywords": [
+    "HTML5",
+    "frontEnd"
+  ]
+},
+{
+  "name": "CSS",
+  "level": "85",
+  "keywords": [
+    "CSS3",
+    "Sass",
+    "Less"
+  ]
+},
+{
+  "name": "Node.js",
+  "level": "80",
+  "keywords": [
+    "backEnd",
+    "Node.js",
+    "Express.js",
+    "Mean"
+  ]
+},
+{
+  "name": "MongoDB",
+  "level": "80",
+  "keywords": [
+    "DBA",
+    "Mongodb",
+    "DBD",
+    "noSQL",
+    "bigData"
+  ]
+},
+{
+  "name": "Angular.js",
+  "level": "85",
+  "keywords": [
+    "Angular.js",
+    "Framework"
+  ]
+},
+{
+  "name": "Gimp",
+  "level": "80",
+  "keywords": [
+    "Design",
+    "creative",
+  ]
+},
+{
+  "name": "Photoshop",
+  "level": "80",
+  "keywords": [
+    "Photography",
+    "retouch"
+  ]
+},
+{
+  "name": "openStack",
+  "level": "70",
+  "keywords": [
+    "openStack",
+    "cloudComputing",
+  ]
+},
+{
+    "name": "Cisco (CCNA)",
+    "level": "85",
+    "keywords": [
+      "Networking",
+      "creative",
+      "certificate"
+    ]
+}
+]
