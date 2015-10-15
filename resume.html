@@ -264,7 +264,7 @@
 
                         <div class="pp-container">
 
-                            <img src="images/person.jpg" alt="">
+                            <img src="images/PedroMaciasFullStackDeveloper.jpg" alt="">
 
                         </div>
 
@@ -361,7 +361,7 @@
 
                     <h2 class="home-subtitle">{{resume.basics.status}}</h2>
 
-                    <a href="#contact" class="hire-me-btn btn waves-effect waves-light btn-large brand-bg white-text regular-text">Contrátame! <i class="mdi-content-send left"></i>
+                    <a href="#contact" class="hire-me-btn btn waves-effect waves-light btn-large brand-bg white-text regular-text">¡Contrátame! <i class="mdi-content-send left"></i>
 
                     </a>
 
@@ -967,7 +967,7 @@
                       <p class="regular-text">Soy programador de vocación y apasionado.
                         Estoy cualificado para el desarrollo de proyectos técnicos con intención innovadora.
                         Mi deseo de ayudar a conseguir objetivos me ha llevado a especializarme
-                        en la gestión de proyectos y en el analisis y desarrollo de aplicaciones web. 
+                        en la gestión de proyectos y en el analisis y desarrollo de aplicaciones web.
                         Durante mi experiencia laboral he conseguido adquirir una serie de habilidades completas
                         (Front-End, Back-End y Sys Admin),
                         incluyendo la colaboración estrecha y resolución de problemas.
@@ -986,13 +986,14 @@
 
                         <div id="experienceSlider" class="clearfix card-element-wrapper">
 
+                          <!-- new slide -->
                           <div class="col-sm-4 cold-xs-12 single-card-box wow fadeInUpSmall" data-wow-duration=".7s">
 
                             <div class="card">
 
                               <div class="card-image waves-effect waves-block waves-light">
 
-                                <h2 class="left-align card-title-top">January 2014 - Present</h2>
+                                <h2 class="left-align card-title-top">{{resume.experience[0].startDate | limitTo: 4}} - {{resume.experience[0].endDate | limitTo: 4}}</h2>
 
                                 <div class="valign-wrapper card-img-wrap">
 
@@ -1004,9 +1005,9 @@
 
                               <div class="card-content">
 
-                                <span class="card-title activator brand-text">UX/UI Designer<i class="mdi-navigation-more-vert right"></i></span>
+                                <span class="card-title activator brand-text">{{resume.experience[0].position}}<i class="mdi-navigation-more-vert right"></i></span>
 
-                                <p>Apple.inc</p>
+                                <p>{{resume.experience[0].company}}</p>
 
                               </div>
 
@@ -1014,15 +1015,16 @@
 
                                 <div class="rev-title-wrap">
 
-                                  <span class="card-title activator brand-text">UX/UI Designer<i class="mdi-navigation-close right"></i></span>
+                                  <span class="card-title activator brand-text">{{resume.experience[0].position}}<i class="mdi-navigation-close right"></i></span>
 
-                                  <p>Apple.inc</p>
+                                  <p>{{resume.experience[0].company}}</p>
 
                                 </div>
 
                                 <p class="rev-content">
 
-                                  Collaboratively initiate collaborative schemas for high-quality communities. Objectively create sticky relationships via team building outsourcing.
+                                  {{resume.experience[0].summary}}
+                                  <br> <a href="{{resume.experience[0].website}}">{{resume.experience[0].website}}</a>
 
                                 </p>
 
@@ -1031,7 +1033,107 @@
                             </div>
 
                           </div>
+                          <!-- end slide -->
 
+                          <!-- new slide -->
+                          <div class="col-sm-4 cold-xs-12 single-card-box wow fadeInUpSmall" data-wow-duration=".7s">
+
+                            <div class="card">
+
+                              <div class="card-image waves-effect waves-block waves-light">
+
+                                <h2 class="left-align card-title-top">{{resume.experience[1].startDate | limitTo: 4}} - {{resume.experience[1].endDate | limitTo: 4}}</h2>
+
+                                <div class="valign-wrapper card-img-wrap">
+
+                                  <img class="activator" src="images/ghost_rider.jpg" alt="">
+
+                                </div>
+
+                              </div>
+
+                              <div class="card-content">
+
+                                <span class="card-title activator brand-text">{{resume.experience[1].position}}<i class="mdi-navigation-more-vert right"></i></span>
+
+                                <p>{{resume.experience[1].company}}</p>
+
+                              </div>
+
+                              <div class="card-reveal">
+
+                                <div class="rev-title-wrap">
+
+                                  <span class="card-title activator brand-text">{{resume.experience[1].position}}<i class="mdi-navigation-close right"></i></span>
+
+                                  <p>{{resume.experience[1].company}}</p>
+
+                                </div>
+
+                                <p class="rev-content">
+
+                                  {{resume.experience[1].summary}}
+                                  <br> <a href="{{resume.experience[0].website}}">{{resume.experience[1].website}}</a>
+
+                                </p>
+
+                              </div>
+
+                            </div>
+
+                          </div>
+                          <!-- end slide -->
+
+                          <!-- new slide -->
+                          <div class="col-sm-4 cold-xs-12 single-card-box wow fadeInUpSmall" data-wow-duration=".7s">
+
+                            <div class="card">
+
+                              <div class="card-image waves-effect waves-block waves-light">
+
+                                <h2 class="left-align card-title-top">{{resume.experience[2].startDate | limitTo: 4}} - {{resume.experience[2].endDate | limitTo: 4}}</h2>
+
+                                <div class="valign-wrapper card-img-wrap">
+
+                                  <img class="activator" src="images/ghost_rider.jpg" alt="">
+
+                                </div>
+
+                              </div>
+
+                              <div class="card-content">
+
+                                <span class="card-title activator brand-text">{{resume.experience[2].position}}<i class="mdi-navigation-more-vert right"></i></span>
+
+                                <p>{{resume.experience[2].company}}</p>
+
+                              </div>
+
+                              <div class="card-reveal">
+
+                                <div class="rev-title-wrap">
+
+                                  <span class="card-title activator brand-text">{{resume.experience[2].position}}<i class="mdi-navigation-close right"></i></span>
+
+                                  <p>{{resume.experience[2].company}}</p>
+
+                                </div>
+
+                                <p class="rev-content">
+
+                                  {{resume.experience[2].summary}}
+                                  <br> <a href="{{resume.experience[0].website}}">{{resume.experience[2].website}}</a>
+
+                                </p>
+
+                              </div>
+
+                            </div>
+
+                          </div>
+                          <!-- end slide -->
+
+                          <!-- new slide -->
                           <div class="col-sm-4 cold-xs-12 single-card-box wow fadeInUpSmall" data-wow-delay=".2s" data-wow-duration=".7s">
 
                             <div class="card">

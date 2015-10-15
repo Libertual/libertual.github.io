@@ -13,7 +13,7 @@
     "email": "pedro@tecnual.com",
     "phone": "(+34) 633 36 40 80",
     "website": "http://libertual.github.io",
-    "summary": "Hola, Soy un programador y administrador de sistemas en León, España. Trabajo con la experiencia en entornos de desarrollo para aplicaciones web, gestion de proyectos de investigación e innovación.",
+    "summary": "Hola, Soy programador y administrador de sistemas en León, España. Trabajo con experiencia en entornos de desarrollo para aplicaciones web, gestion de proyectos de investigación e innovación.",
     "location": {
       "address": "Los Cubos, 44 2ºB",
       "postalCode": "24007",
@@ -41,17 +41,52 @@
 
       }]
   },
-  "work": [{
+  "experience": [{
     "company": "Tecnual",
     "position": "CEO",
     "website": "http://tecnual.com",
-    "startDate": "2007-01-01",
-    "endDate": "2007-01-01",
-    "summary": "",
+    "startDate": "2006-01-01",
+    "endDate": "present",
+    "summary": "Fundador de la compañía en 2006",
     "highlights": [
-      "Started the company"
+      "Fundador de la compañía en 2006"
     ]
-  }],
+  },
+  {
+    "company": "ViajarBajoPrecio.com",
+    "position": "Director Técnico",
+    "website": "http://viajarbajoprecio.com",
+    "startDate": "2000-07-01",
+    "endDate": "2005-07-01",
+    "summary": "Gestión de proyecto técnico para el desarrollo del portal de viajes.",
+    "highlights": [
+      "Gestión de proyecto técnico para el desarrollo del portal de viajes."
+    ]
+  },
+  {
+    "company": "Futurespace",
+    "position": "Analista - programador",
+    "website": "http://futurespace.com",
+    "startDate": "2000-02-01",
+    "endDate": "2000-06-31",
+    "summary": "Desarrollo y anaísis de aplicaciónes móviles para Telefónica I+D en proyectos de investigación.",
+    "highlights": [
+      "Desarrollo y anaísis de aplicaciónes móviles para Telefónica I+D en proyectos de investigación."
+    ]
+  },
+  {
+    "company": "MaciRock",
+    "logoUrl": "",
+    "position": "Analista - programador",
+    "website": "http://macirock.com",
+    "startDate": "2000-02-01",
+    "endDate": "2000-06-31",
+    "summary": "Desarrollo y anaísis de aplicaciónes móviles para Telefónica I+D en proyectos de investigación.",
+    "highlights": [
+      "Desarrollo y anaísis de aplicaciónes móviles para Telefónica I+D en proyectos de investigación."
+    ]
+  }
+],
   "volunteer": [{
     "organization": "Organization",
     "position": "Volunteer",
@@ -98,7 +133,7 @@
   },
   {
     "name": "javaScript",
-    "level": "80",
+    "level": "85",
     "keywords": [
       "javaScript",
       "ES6",
