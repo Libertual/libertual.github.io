@@ -1,14 +1,6 @@
 {
   "basics": {
     "name": "Pedro Macías",
-<<<<<<< HEAD
-    "label": "Full Stack Web Consulting",
-    "picture": "/images/pedroRedondo100x100.png",
-    "email": "pedro@tecnual.com",
-    "phone": "(+34) 633 36 40 80",
-    "website": "http://libertual.github.io",
-    "summary": "...",
-=======
     "status": "Full Stack Web Developer",
     "birthdate": "1977-08-12T23:10:00.000Z",
     "pictures": {
@@ -22,21 +14,11 @@
     "phone": "(+34) 633 36 40 80",
     "website": "http://libertual.github.io",
     "summary": "Hola, Soy un programador y administrador de sistemas en León, España. Trabajo con la experiencia en entornos de desarrollo para aplicaciones web, gestion de proyectos de investigación e innovación.",
->>>>>>> dev
     "location": {
       "address": "Los Cubos, 44 2ºB",
       "postalCode": "24007",
       "city": "León",
       "countryCode": "ES",
-<<<<<<< HEAD
-      "region": "León"
-    },
-    "profiles": [{
-      "network": "Twitter",
-      "username": "libertual",
-      "url": "http://twitter.com/libertual"
-    }]
-=======
       "region": "León",
       "country": "España"
     },
@@ -58,7 +40,6 @@
     "icon": "fa fa-facebook"
 
       }]
->>>>>>> dev
   },
   "work": [{
     "company": "Tecnual",
@@ -107,19 +88,6 @@
     "summary": "Description..."
   }],
   "skills": [{
-<<<<<<< HEAD
-    "name": "Web Development",
-    "level": "Master",
-    "keywords": [
-      "HTML",
-      "CSS",
-      "Javascript",
-      "AngularJS",
-      "Polymer JS",
-      "MongoDB"
-    ]
-  }],
-=======
     "name": "Linux (sysAdmin)",
     "level": "90",
     "keywords": [
@@ -217,7 +185,6 @@
       ]
   }
   ],
->>>>>>> dev
   "languages": [{
     "language": "English",
     "fluency": "B2 Level"
