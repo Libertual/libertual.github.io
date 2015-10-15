@@ -1,17 +1,34 @@
 {
   "basics": {
     "name": "Pedro Macías",
+<<<<<<< HEAD
     "label": "Full Stack Web Consulting",
     "picture": "/images/pedroRedondo100x100.png",
     "email": "pedro@tecnual.com",
     "phone": "(+34) 633 36 40 80",
     "website": "http://libertual.github.io",
     "summary": "...",
+=======
+    "status": "Full Stack Web Developer",
+    "birthdate": "1977-08-12T23:10:00.000Z",
+    "pictures": {
+      "principal": {
+        "url":"/images/PedroMaciasFullStackDeveloper.jpg",
+        "title": "Pedro Macías - Full Stack Web Developer",
+        "alt": "Pedro Macías"
+      }
+    },
+    "email": "pedro@tecnual.com",
+    "phone": "(+34) 633 36 40 80",
+    "website": "http://libertual.github.io",
+    "summary": "Hola, Soy un programador y administrador de sistemas en León, España. Trabajo con la experiencia en entornos de desarrollo para aplicaciones web, gestion de proyectos de investigación e innovación.",
+>>>>>>> dev
     "location": {
       "address": "Los Cubos, 44 2ºB",
       "postalCode": "24007",
       "city": "León",
       "countryCode": "ES",
+<<<<<<< HEAD
       "region": "León"
     },
     "profiles": [{
@@ -19,6 +36,29 @@
       "username": "libertual",
       "url": "http://twitter.com/libertual"
     }]
+=======
+      "region": "León",
+      "country": "España"
+    },
+    "profiles": [{
+      "network": "Twitter",
+      "username": "@Libertual",
+      "url": "http://twitter.com/libertual",
+      "icon": "fa fa-twitter"
+    },
+    {
+      "network": "Google+",
+      "username": "@Libertual",
+      "url": "https://plus.google.com/+PedroMacíasLibertual/",
+      "icon": "fa fa-google-plus"
+    },
+    {"network": "Facebook",
+    "username": "Libertual",
+    "url": "https://www.facebook.com/Libertual",
+    "icon": "fa fa-facebook"
+
+      }]
+>>>>>>> dev
   },
   "work": [{
     "company": "Tecnual",
@@ -67,6 +107,7 @@
     "summary": "Description..."
   }],
   "skills": [{
+<<<<<<< HEAD
     "name": "Web Development",
     "level": "Master",
     "keywords": [
@@ -78,6 +119,105 @@
       "MongoDB"
     ]
   }],
+=======
+    "name": "Linux (sysAdmin)",
+    "level": "90",
+    "keywords": [
+      "linux",
+      "sysAdmin",
+      "openSource"
+    ]
+  },
+  {
+    "name": "javaScript",
+    "level": "80",
+    "keywords": [
+      "javaScript",
+      "ES6",
+      "Good Parts"
+    ]
+  },
+  {
+    "name": "HTML5",
+    "level": "95",
+    "keywords": [
+      "HTML5",
+      "frontEnd"
+    ]
+  },
+  {
+    "name": "CSS",
+    "level": "90",
+    "keywords": [
+      "CSS3",
+      "Sass",
+      "Less"
+    ]
+  },
+  {
+    "name": "Node.js",
+    "level": "85",
+    "keywords": [
+      "backEnd",
+      "Node.js",
+      "Express.js",
+      "Mean"
+    ]
+  },
+  {
+    "name": "MongoDB",
+    "level": "85",
+    "keywords": [
+      "DBA",
+      "Mongodb",
+      "DBD",
+      "noSQL",
+      "bigData"
+    ]
+  },
+  {
+    "name": "Angular.js",
+    "level": "85",
+    "keywords": [
+      "Angular.js",
+      "Framework"
+    ]
+  },
+  {
+    "name": "Gimp",
+    "level": "75",
+    "keywords": [
+      "Design",
+      "Creative"
+    ]
+  },
+  {
+    "name": "Photoshop",
+    "level": "75",
+    "keywords": [
+      "Photography",
+      "retouch"
+    ]
+  },
+  {
+    "name": "openStack",
+    "level": "70",
+    "keywords": [
+      "openStack",
+      "cloudComputing"
+    ]
+  },
+  {
+      "name": "Cisco (CCNA)",
+      "level": "85",
+      "keywords": [
+        "Networking",
+        "Routing",
+        "Certificate"
+      ]
+  }
+  ],
+>>>>>>> dev
   "languages": [{
     "language": "English",
     "fluency": "B2 Level"
