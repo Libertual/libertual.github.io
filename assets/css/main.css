@@ -2065,3 +2065,11 @@ span.num {
 .menu-select [type="radio"]:not(:checked) + label:before {
     border-color: #999;
 }
+
+.logo-libertual {
+  font-family: 'Signika', sans-serif;
+  color: #555;
+  display: block;
+  font-size: 3em;
+  padding-top: 10px;
+}
