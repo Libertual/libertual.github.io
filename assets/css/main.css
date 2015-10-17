@@ -2,10 +2,10 @@
 ====================================================
 * [Master Stylesheet]
 
-  Theme Name : MaterialX
+  Theme Name :  MaterialL
   Version    :  1.0
-  Author     :  Bdinfosys
-  Author URI :  http://themeforest.net/user/bdinfosys
+  Author     :  Libertual
+  Author URI :  https://libertual.github.io
 ====================================================
 
    TOC:
@@ -1437,6 +1437,7 @@ span.num {
 }
 .contact-form .card-panel {
     margin: 0;
+    margin-bottom: 10;
 }
 .contact-form .input-label {
     color: #bbbbbb;
