@@ -39,10 +39,17 @@
     "url": "https://www.facebook.com/Libertual",
     "icon": "fa fa-facebook"
 
-      }]
+      },
+      {"network": "GitHub",
+      "username": "Libertual",
+      "url": "https://github.com/Libertual",
+      "icon": "fa fa-github-alt"
+      }
+    ]
   },
   "experience": [{
     "company": "Tecnual",
+    "companyLogo": "images/e-tecnual.png",
     "position": "CEO",
     "website": "http://tecnual.com",
     "startDate": "2006-01-01",
@@ -54,6 +61,7 @@
   },
   {
     "company": "ViajarBajoPrecio.com",
+    "companyLogo": "images/e-VBP.png",
     "position": "Director Técnico",
     "website": "http://viajarbajoprecio.com",
     "startDate": "2000-07-01",
@@ -65,6 +73,7 @@
   },
   {
     "company": "Futurespace",
+    "companyLogo": "images/e-futurespace.png",
     "position": "Analista - programador",
     "website": "http://futurespace.com",
     "startDate": "2000-02-01",
@@ -76,32 +85,65 @@
   },
   {
     "company": "MaciRock",
-    "logoUrl": "",
+    "companyLogo": "images/e-macirock.png",
     "position": "Analista - programador",
-    "website": "http://macirock.com",
-    "startDate": "2000-02-01",
-    "endDate": "2000-06-31",
-    "summary": "Desarrollo y anaísis de aplicaciónes móviles para Telefónica I+D en proyectos de investigación.",
+    "website": "",
+    "startDate": "1999-09-01",
+    "endDate": "2000-01-31",
+    "summary": "Gestión de almacenes y control de pedidos y stock.",
+    "highlights": [
+      "Gestión de almacenes y control de pedidos y stock."
+    ]
+  },
+  {
+    "company": "Hospital de León",
+    "companyLogo": "images/e-sacyl.png",
+    "position": "Técnico - Analista - programador",
+    "website": "http://www.saludcastillayleon.es/CHLeon/es/hospital-leon",
+    "startDate": "1999-05-01",
+    "endDate": "2000-08-31",
+    "summary": "Desarrollo y análisis de aplicaciónes en entorno corporativo, reparación de ordenadores y gestión de redes y servidores.",
     "highlights": [
       "Desarrollo y anaísis de aplicaciónes móviles para Telefónica I+D en proyectos de investigación."
     ]
   }
 ],
-  "volunteer": [{
-    "organization": "Organization",
-    "position": "Volunteer",
-    "website": "http://organization.com/",
-    "startDate": "2012-01-01",
-    "endDate": "2013-01-01",
-    "summary": "Description...",
-    "highlights": [
-      "Awarded 'Volunteer of the Month'"
-    ]
-  }],
   "education": [{
+    "institution": "MiriadaX",
+    "area": "Ciencias Tecnológicas",
+    "studyType": "Mooc",
+    "startDate": "2015-05-14",
+    "endDate": "2015-06-01",
+    "gpa": "",
+    "certificateUrl": "https://miriadax.net/files/10132/badge/ae8e4a66-d32f-437a-98da-0e40368f5971.pdf",
+    "courses": [
+      "Desarrollo de servicios en la nube con HTML5, Javascript y node.js"
+    ]
+  },{
+    "institution": "CICE ",
+    "area": "Master en redes y comunicaciones",
+    "studyType": "Master",
+    "startDate": "2003-09-15",
+    "endDate": "2004-07-01",
+    "gpa": "",
+    "courses": [
+      ""
+    ]
+  },{
+    "institution": "CICE ",
+    "area": "Master en redes y comunicaciones",
+    "studyType": "Master",
+    "startDate": "2003-09-15",
+    "endDate": "2004-07-01",
+    "gpa": "",
+    "courses": [
+      ""
+    ]
+  },
+  {
     "institution": "María Auxiliadora",
-    "area": "Desarrollo de Aplicaciones informáticas",
-    "studyType": "Modulo Superior",
+    "area": "Desarrollo de Aplicaciones informáticas (DAI)",
+    "studyType": "Técnico Superior",
     "startDate": "1997-09-15",
     "endDate": "1999-07-01",
     "gpa": "",
@@ -231,6 +273,103 @@
       "Unicorns"
     ]
   }],
+  "tags": [{
+    "tag": "Linux",
+    "icon": "linux"
+    },
+    {
+      "tag": "javaScript",
+      "icon": "code"
+    },
+    {
+      "tag": "mongoDB",
+      "icon": "database"
+    },
+    {
+      "tag": "gimp",
+      "icon": "picture-o"
+    },
+    {
+      "tag": "Angular.js",
+      "icon": "code"
+    },
+    {
+      "tag": "CISCO",
+      "icon": "code"
+    },
+    {
+      "tag": "AWS",
+      "icon": "amazon"
+    },
+    {
+      "tag": "HTML5",
+      "icon": "html5"
+    },
+    {
+      "tag": "CSS",
+      "icon": "css3"
+    },
+    {
+      "tag": "openStack",
+      "icon": "server"
+    },
+    {
+      "tag": "Cloud Computing",
+      "icon": "cloud"
+    },
+    {
+      "tag": "PHP",
+      "icon": "code"
+    },
+    {
+      "tag": "Social Network",
+      "icon": "share-alt"
+    },
+    {
+      "tag": "Rest Api",
+      "icon": "retweet"
+    },
+    {
+      "tag": "Big Data",
+      "icon": "database"
+    },
+    {
+      "tag": "Comunities",
+      "icon": "users"
+    },
+    {
+      "tag": "Perl",
+      "icon": "code"
+    },
+    {
+      "tag": "Mysql",
+      "icon": "database"
+    },
+    {
+      "tag": "Sass",
+      "icon": "code"
+    },
+    {
+      "tag": "Google Material Design",
+      "icon": "picture"
+    },
+    {
+      "tag": "Bootstrap",
+      "icon": "database"
+    },
+    {
+      "tag": "Redmine",
+      "icon": "calendar"
+    },
+    {
+      "tag": "Bind9",
+      "icon": "globe"
+    },
+    {
+      "tag": "CCNA",
+      "icon": "share-alt"
+    }
+  ],
   "references": [{
     "name": "",
     "reference": ""

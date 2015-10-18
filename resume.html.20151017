@@ -29,7 +29,8 @@
 
 
   <!-- Favicon-->
-  <link rel="icon" href="images/favicon.png" sizes="16x16" type="image/png">
+
+  <link rel="shortcut icon" href="images/favicon.png" >
 
 
   <!-- Stylesheets -->
@@ -177,9 +178,13 @@
 
     <div id="preloader">
 
-      <div class="loader brand-text">
+      <div class="loader">
 
-            <i class="fa fa-spinner fa-pulse"></i>
+            <svg class="circle-loader" height="50" width="50">
+
+              <circle class="path" cx="25" cy="25" r="20" fill="none" stroke-width="6" stroke-miterlimit="10" />
+
+            </svg>
 
         </div>
 
@@ -207,8 +212,7 @@
 
                 <div class="clearfix nav-wrapper">
 
-                  <a href="#home" class="left brand-logo menu-smooth-scroll" data-section="#home">
-                    <span class="logo-libertual">{Liber<span class="brand-text">tual:</span>}</span>
+                  <a href="#home" class="left brand-logo menu-smooth-scroll" data-section="#home"><span class="logo-libertual">{Liber<span class="brand-text">tual</span>}</span>
 
                   </a>
 
@@ -469,7 +473,7 @@
 
                   <li ng-repeat="profile in resume.basics.profiles">
 
-                    <a href="{{profile.url}}" class="btn-floating waves-effect waves-light white" title="{{profile.network}}"> <i class="{{profile.icon}}"></i></a>
+                    <a href="{{profile.url}}" class="btn-floating waves-effect waves-light white"> <i class='{{profile.icon}}'></i></a>
 
                   </li>
                 </ul>
@@ -993,7 +997,7 @@
 
                                 <div class="valign-wrapper card-img-wrap">
 
-                                  <img class="activator" src="{{resume.experience[0].companyLogo}}" alt="">
+                                  <img class="activator" src="images/ghost_rider.jpg" alt="">
 
                                 </div>
 
@@ -1042,7 +1046,7 @@
 
                                 <div class="valign-wrapper card-img-wrap">
 
-                                  <img class="activator" src="{{resume.experience[1].companyLogo}}" alt="">
+                                  <img class="activator" src="images/ghost_rider.jpg" alt="">
 
                                 </div>
 
@@ -1091,7 +1095,7 @@
 
                                 <div class="valign-wrapper card-img-wrap">
 
-                                  <img class="activator" src="{{resume.experience[2].companyLogo}}" alt="">
+                                  <img class="activator" src="images/ghost_rider.jpg" alt="">
 
                                 </div>
 
@@ -1118,7 +1122,7 @@
                                 <p class="rev-content">
 
                                   {{resume.experience[2].summary}}
-                                  <br> <a href="{{resume.experience[2].website}}">{{resume.experience[2].website}}</a>
+                                  <br> <a href="{{resume.experience[0].website}}">{{resume.experience[2].website}}</a>
 
                                 </p>
 
@@ -1130,17 +1134,17 @@
                           <!-- end slide -->
 
                           <!-- new slide -->
-                          <div class="col-sm-4 cold-xs-12 single-card-box wow fadeInUpSmall" data-wow-duration=".7s">
+                          <div class="col-sm-4 cold-xs-12 single-card-box wow fadeInUpSmall" data-wow-delay=".2s" data-wow-duration=".7s">
 
                             <div class="card">
 
                               <div class="card-image waves-effect waves-block waves-light">
 
-                                <h2 class="left-align card-title-top">{{resume.experience[3].startDate | limitTo: 4}} - {{resume.experience[2].endDate | limitTo: 4}}</h2>
+                                <h2 class="left-align card-title-top">January 2014 - Present</h2>
 
                                 <div class="valign-wrapper card-img-wrap">
 
-                                  <img class="activator" src="{{resume.experience[3].companyLogo}}" alt="">
+                                  <img class="activator" src="images/lion.jpg" alt="">
 
                                 </div>
 
@@ -1148,9 +1152,9 @@
 
                               <div class="card-content">
 
-                                <span class="card-title activator brand-text">{{resume.experience[3].position}}<i class="mdi-navigation-more-vert right"></i></span>
+                                <span class="card-title activator brand-text">UX/UI Designer<i class="mdi-navigation-more-vert right"></i></span>
 
-                                <p>{{resume.experience[3].company}}</p>
+                                <p>Android One</p>
 
                               </div>
 
@@ -1158,16 +1162,15 @@
 
                                 <div class="rev-title-wrap">
 
-                                  <span class="card-title activator brand-text">{{resume.experience[3].position}}<i class="mdi-navigation-close right"></i></span>
+                                  <span class="card-title activator brand-text">UX/UI Designer<i class="mdi-navigation-close right"></i></span>
 
-                                  <p>{{resume.experience[3].company}}</p>
+                                  <p>Android One</p>
 
                                 </div>
 
                                 <p class="rev-content">
 
-                                  {{resume.experience[3].summary}}
-                                  <br> <a href="{{resume.experience[0].website}}">{{resume.experience[3].website}}</a>
+                                  Collaboratively initiate collaborative schemas for high-quality communities. Objectively create sticky relationships via team building outsourcing.
 
                                 </p>
 
@@ -1176,20 +1179,18 @@
                             </div>
 
                           </div>
-                          <!-- end slide -->
 
-                          <!-- new slide -->
-                          <div class="col-sm-4 cold-xs-12 single-card-box wow fadeInUpSmall" data-wow-duration=".7s">
+                          <div class="col-sm-4 cold-xs-12 single-card-box wow fadeInUpSmall" data-wow-delay=".4s" data-wow-duration=".7s">
 
                             <div class="card">
 
                               <div class="card-image waves-effect waves-block waves-light">
 
-                                <h2 class="left-align card-title-top">{{resume.experience[4].startDate | limitTo: 4}} - {{resume.experience[2].endDate | limitTo: 4}}</h2>
+                                <h2 class="left-align card-title-top">January 2014 - Present</h2>
 
                                 <div class="valign-wrapper card-img-wrap">
 
-                                  <img class="activator" src="{{resume.experience[4].companyLogo}}" alt="">
+                                  <img class="activator" src="images/bull.jpg" alt="">
 
                                 </div>
 
@@ -1197,9 +1198,9 @@
 
                               <div class="card-content">
 
-                                <span class="card-title activator brand-text">{{resume.experience[4].position}}<i class="mdi-navigation-more-vert right"></i></span>
+                                <span class="card-title activator brand-text">UX/UI Designer<i class="mdi-navigation-more-vert right"></i></span>
 
-                                <p>{{resume.experience[4].company}}</p>
+                                <p>Android One</p>
 
                               </div>
 
@@ -1207,16 +1208,15 @@
 
                                 <div class="rev-title-wrap">
 
-                                  <span class="card-title activator brand-text">{{resume.experience[4].position}}<i class="mdi-navigation-close right"></i></span>
+                                  <span class="card-title activator brand-text">UX/UI Designer<i class="mdi-navigation-close right"></i></span>
 
-                                  <p>{{resume.experience[4].company}}</p>
+                                  <p>Android One</p>
 
                                 </div>
 
                                 <p class="rev-content">
 
-                                  {{resume.experience[4].summary}}
-                                  <br> <a href="{{resume.experience[4].website}}">{{resume.experience[4].website}}</a>
+                                  Collaboratively initiate collaborative schemas for high-quality communities. Objectively create sticky relationships via team building outsourcing.
 
                                 </p>
 
@@ -1225,7 +1225,98 @@
                             </div>
 
                           </div>
-                          <!-- end slide -->
+
+                          <div class="col-sm-4 cold-xs-12 single-card-box">
+
+                            <div class="card">
+
+                              <div class="card-image waves-effect waves-block waves-light">
+
+                                <h2 class="left-align card-title-top">January 2014 - Present</h2>
+
+                                <div class="valign-wrapper card-img-wrap">
+
+                                  <img class="activator" src="images/beakers.jpg" alt="">
+
+                                </div>
+
+                              </div>
+
+                              <div class="card-content">
+
+                                <span class="card-title activator brand-text">UX/UI Designer<i class="mdi-navigation-more-vert right"></i></span>
+
+                                <p>Windows Phone</p>
+
+                              </div>
+
+                              <div class="card-reveal">
+
+                                <div class="rev-title-wrap">
+
+                                  <span class="card-title activator brand-text">UX/UI Designer<i class="mdi-navigation-close right"></i></span>
+
+                                  <p>Windows Phone</p>
+
+                                </div>
+
+                                <p class="rev-content">
+
+                                  Collaboratively initiate collaborative schemas for high-quality communities. Objectively create sticky relationships via team building outsourcing.
+
+                                </p>
+
+                              </div>
+
+                            </div>
+
+                          </div>
+
+                          <div class="col-sm-4 cold-xs-12 single-card-box">
+
+                            <div class="card">
+
+                              <div class="card-image waves-effect waves-block waves-light">
+
+                                <h2 class="left-align card-title-top">January 2014 - Present</h2>
+
+                                <div class="valign-wrapper card-img-wrap">
+
+                                  <img class="activator" src="images/kid.jpg" alt="">
+
+                                </div>
+
+                              </div>
+
+                              <div class="card-content">
+
+                                <span class="card-title activator brand-text">UX/UI Designer<i class="mdi-navigation-more-vert right"></i></span>
+
+                                <p>Windows Phone</p>
+
+                              </div>
+
+                              <div class="card-reveal">
+
+                                <div class="rev-title-wrap">
+
+                                  <span class="card-title activator brand-text">UX/UI Designer<i class="mdi-navigation-close right"></i></span>
+
+                                  <p>Windows Phone</p>
+
+                                </div>
+
+                                <p class="rev-content">
+
+                                  Collaboratively initiate collaborative schemas for high-quality communities. Objectively create sticky relationships via team building outsourcing.
+
+                                </p>
+
+                              </div>
+
+                            </div>
+
+                          </div>
 
                         </div>
 
@@ -1273,7 +1364,7 @@
 
                     <div class="col-sm-12">
 
-                      <h2 class="title">Formación</h2>
+                      <h2 class="title">education</h2>
 
                       <p class="regular-text">Aliquam lobortis. Maecenas vestibulum mollis diam. Pellentesque auctor neque nec urna. Nulla sit amet est. Aenean posuere tortor sed cursus feugiat, nunc augue blandit nunc, eu sollicitudin urna dolor sagittis lacus.</p>
 
@@ -1827,17 +1918,335 @@
 
 
 
-    <!-- tags Section -->
+    <!-- Team Section end -->
 
-    <section id="tag-cloud" class="scroll-section brand-bg team-wrap">
-      <div class="tag-cloud">
-        <span class="badge" ng-repeat="tag in resume.tags">
-          <i class="fa fa-{{tag.icon}}"></i> {{tag.tag}}
-        </span>
-      </div>
+    <section id="team" class="scroll-section root-sec brand-bg padd-tb-120 team-wrap">
+
+      <div class="container">
+
+        <div class="row">
+
+          <div class="clearfix team-inner">
+
+            <div class="col-sm-12 col-md-10 card-box-wrap">
+
+              <div class="row">
+
+                <div class="clearfix section-head team-text">
+
+                  <div class="col-sm-12">
+
+                    <h2 class="title">our team</h2>
+
+                    <p class="regular-text">Our Team combines a unique combination of creativity, experience, knowledge but most of all a shared 'can do' attitude to help clients get the very best support, advice and project management to achieve business goals.</p>
+
+                  </div>
+
+                </div>
+
+                <div class="col-lg-12">
+
+                  <div class="overflow-hidden">
+
+                    <div class="row">
+
+                      <div id="teamSlider" class="clearfix card-element-wrapper">
+
+                        <div class="col-sm-4 single-card-box wow fadeInUpSmall" data-wow-duration=".7s">
+
+                          <div class="card">
+
+                            <div class="card-image waves-effect waves-block waves-light">
+
+                              <div class="card-img-wrap">
+
+                                <img class="activator" src="images/t1.png" alt="">
+
+                              </div>
+
+                            </div>
+
+                            <div class="card-content">
+
+                              <span class="card-title activator brand-text">Jonh Doe<i class="mdi-navigation-more-vert right"></i></span>
+
+                              <p>UX UI Designer</p>
+
+                            </div>
+
+                            <div class="card-reveal">
+
+                              <div class="rev-title-wrap">
+
+                                <span class="card-title activator brand-text">Jonh Doe<i class="mdi-navigation-close right"></i></span>
+
+                                <p>UX UI Designer</p>
+
+                              </div>
+
+                              <p class="rev-content">
+
+                                Collaboratively initiate collaborative schemas for high-quality communities. Objectively create sticky relationships via team building outsourcing.
+
+                              </p>
+
+                            </div>
+
+                          </div>
+
+                        </div> <!-- single team member -->
+
+                        <div class="col-sm-4 single-card-box wow fadeInUpSmall" data-wow-delay=".2s" data-wow-duration=".7s">
+
+                          <div class="card">
+
+                            <div class="card-image waves-effect waves-block waves-light">
+
+                              <div class="card-img-wrap">
+
+                                <img class="activator" src="images/t2.png" alt="">
+
+                              </div>
+
+                            </div>
+
+                            <div class="card-content">
+
+                              <span class="card-title activator brand-text">Letizia Toye<i class="mdi-navigation-more-vert right"></i></span>
+
+                              <p>Front End Developer</p>
+
+                            </div>
+
+                            <div class="card-reveal">
+
+                              <div class="rev-title-wrap">
+
+                                <span class="card-title activator brand-text">Letizia Toye<i class="mdi-navigation-close right"></i></span>
+
+                                <p>Front End Developer</p>
+
+                              </div>
+
+                              <p class="rev-content">
+
+                                Collaboratively initiate collaborative schemas for high-quality communities. Objectively create sticky relationships via team building outsourcing.
+
+                              </p>
+
+                            </div>
+
+                          </div>
+
+                        </div> <!-- single team member -->
+
+                        <div class="col-sm-4 single-card-box wow fadeInUpSmall" data-wow-delay=".4s" data-wow-duration=".7s">
+
+                          <div class="card">
+
+                            <div class="card-image waves-effect waves-block waves-light">
+
+                              <div class="card-img-wrap">
+
+                                <img class="activator" src="images/t3.png" alt="">
+
+                              </div>
+
+                            </div>
+
+                            <div class="card-content">
+
+                              <span class="card-title activator brand-text">Letizia Toye<i class="mdi-navigation-more-vert right"></i></span>
+
+                              <p>Front End Developer</p>
+
+                            </div>
+
+                            <div class="card-reveal">
+
+                              <div class="rev-title-wrap">
+
+                                <span class="card-title activator brand-text">Letizia Toye<i class="mdi-navigation-close right"></i></span>
+
+                                <p>Front End Developer</p>
+
+                              </div>
+
+                              <p class="rev-content">
+
+                                Collaboratively initiate collaborative schemas for high-quality communities. Objectively create sticky relationships via team building outsourcing.
+
+                              </p>
+
+                            </div>
+
+                          </div>
+
+                        </div> <!-- single team member -->
+
+                        <div class="col-sm-4 single-card-box">
+
+                          <div class="card">
+
+                            <div class="card-image waves-effect waves-block waves-light">
+
+                              <div class="card-img-wrap">
+
+                                <img class="activator" src="images/t4.png" alt="">
+
+                              </div>
+
+                            </div>
+
+                            <div class="card-content">
+
+                              <span class="card-title activator brand-text">Letizia Toye<i class="mdi-navigation-more-vert right"></i></span>
+
+                              <p>Front End Developer</p>
+
+                            </div>
+
+                            <div class="card-reveal">
+
+                              <div class="rev-title-wrap">
+
+                                <span class="card-title activator brand-text">Letizia Toye<i class="mdi-navigation-close right"></i></span>
+
+                                <p>Front End Developer</p>
+
+                              </div>
+
+                              <p class="rev-content">
+
+                                Collaboratively initiate collaborative schemas for high-quality communities. Objectively create sticky relationships via team building outsourcing.
+
+                              </p>
+
+                            </div>
+
+                          </div>
+
+                        </div> <!-- single team member -->
+
+                        <div class="col-sm-4 single-card-box">
+
+                          <div class="card">
+
+                            <div class="card-image waves-effect waves-block waves-light">
+
+                              <div class="card-img-wrap">
+
+                                <img class="activator" src="images/t5.png" alt="">
+
+                              </div>
+
+                            </div>
+
+                            <div class="card-content">
+
+                              <span class="card-title activator brand-text">Tandi Battle<i class="mdi-navigation-more-vert right"></i></span>
+
+                              <p>Team Manager</p>
+
+                            </div>
+
+                            <div class="card-reveal">
+
+                              <div class="rev-title-wrap">
+
+                                <span class="card-title activator brand-text">Tandi Battle<i class="mdi-navigation-close right"></i></span>
+
+                                <p>Team Manager</p>
+
+                              </div>
+
+                              <p class="rev-content">
+
+                                Collaboratively initiate collaborative schemas for high-quality communities. Objectively create sticky relationships via team building outsourcing.
+
+                              </p>
+
+                            </div>
+
+                          </div>
+
+                        </div> <!-- single team member -->
+
+                        <div class="col-sm-4 single-card-box">
+
+                          <div class="card">
+
+                            <div class="card-image waves-effect waves-block waves-light">
+
+                              <div class="card-img-wrap">
+
+                                <img class="activator" src="images/t6.png" alt="">
+
+                              </div>
+
+                            </div>
+
+                            <div class="card-content">
+
+                              <span class="card-title activator brand-text">Tandi Battle<i class="mdi-navigation-more-vert right"></i></span>
+
+                              <p>Team Manager</p>
+
+                            </div>
+
+                            <div class="card-reveal">
+
+                              <div class="rev-title-wrap">
+
+                                <span class="card-title activator brand-text">Tandi Battle<i class="mdi-navigation-close right"></i></span>
+
+                                <p>Team Manager</p>
+
+                              </div>
+
+                              <p class="rev-content">
+
+                                Collaboratively initiate collaborative schemas for high-quality communities. Objectively create sticky relationships via team building outsourcing.
+
+                              </p>
+
+                            </div>
+
+                          </div>
+
+                        </div> <!-- single team member -->
+
+                      </div> <!-- #teamSlider end -->
+
+                    </div>
+
+                  </div>
+
+                </div>
+
+              </div>
+
+            </div>
+
+            <div class="btn-wrapp tmu-ctrl">
+
+              <a class="btn-floating waves-effect waves-light btn-large white go go-left"><i class="mdi-navigation-chevron-left brand-text"></i></a>
+
+              <a class="btn-floating waves-effect waves-light btn-large white go go-right"><i class="mdi-navigation-chevron-right brand-text"></i></a>
+
+            </div>
+
+          </div>
+
+        </div>
+
+
+
+      </div> <!-- .container -->
+
     </section>
 
-    <!-- tag Section end -->
+    <!-- #team Section end -->
 
 
 
