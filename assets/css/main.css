@@ -2085,10 +2085,12 @@ span.num {
   padding-top: 10px;
 }
 .tag-cloud {
-  margin: 20px;
-  height: 200px;
+  display: inline-block;
+  margin: auto;
 }
 .tag-cloud .badge {
-  margin: 10px;
-  color: #DDD;
+  float:left;
+  margin: 2px;
+  color: #EEE;
+  font-size: .7em;
 }

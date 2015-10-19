@@ -281,14 +281,6 @@
 
                     </li>
 
-                    <li><a href="#portfolio" data-section="#portfolio" class="menu-smooth-scroll"><i class="fa fa-briefcase fa-fw"></i>Portfolio</a>
-
-                    </li>
-
-                    <li><a href="#blog" data-section="#blog" class="menu-smooth-scroll"><i class="fa fa-pencil fa-fw"></i>Blog</a>
-
-                    </li>
-
                     <li><a href="#contact" data-section="#contact" class="menu-smooth-scroll"><i class="fa fa-paper-plane fa-fw"></i>Contacto</a>
 
                     </li>
@@ -305,12 +297,10 @@
 </ul>
 
 <ul>
-                    <li><a href="https://www.facebook.com/Libertual"><i class="fa fa-facebook"></i> Facebook</a>
-
-                    </li>
-
-                    <li><a href="https://twitter.com/libertual"><i class="fa fa-twitter"></i> Twitter</a>
-
+                    <li ng-repeat="profile in resume.basics.profiles">
+                      <a href="{{profile.url}}">
+                        <i class="{{profile.icon}}"></i> {{profile.network}}
+                      </a>
                     </li>
 </ul>
                   </ul>
@@ -993,7 +983,7 @@
 
                                 <div class="valign-wrapper card-img-wrap">
 
-                                  <img class="activator" src="{{resume.experience[0].companyLogo}}" alt="">
+                                  <img class="activator" ng-src="{{resume.experience[0].companyLogo}}" alt="">
 
                                 </div>
 
@@ -1042,7 +1032,7 @@
 
                                 <div class="valign-wrapper card-img-wrap">
 
-                                  <img class="activator" src="{{resume.experience[1].companyLogo}}" alt="">
+                                  <img class="activator" ng-src="{{resume.experience[1].companyLogo}}" alt="">
 
                                 </div>
 
@@ -1091,7 +1081,7 @@
 
                                 <div class="valign-wrapper card-img-wrap">
 
-                                  <img class="activator" src="{{resume.experience[2].companyLogo}}" alt="">
+                                  <img class="activator" ng-src="{{resume.experience[2].companyLogo}}" alt="">
 
                                 </div>
 
@@ -1140,7 +1130,7 @@
 
                                 <div class="valign-wrapper card-img-wrap">
 
-                                  <img class="activator" src="{{resume.experience[3].companyLogo}}" alt="">
+                                  <img class="activator" ng-src="{{resume.experience[3].companyLogo}}" alt="">
 
                                 </div>
 
@@ -1189,7 +1179,7 @@
 
                                 <div class="valign-wrapper card-img-wrap">
 
-                                  <img class="activator" src="{{resume.experience[4].companyLogo}}" alt="">
+                                  <img class="activator" ng-src="{{resume.experience[4].companyLogo}}" alt="">
 
                                 </div>
 
@@ -1275,7 +1265,12 @@
 
                       <h2 class="title">Formación</h2>
 
-                      <p class="regular-text">Aliquam lobortis. Maecenas vestibulum mollis diam. Pellentesque auctor neque nec urna. Nulla sit amet est. Aenean posuere tortor sed cursus feugiat, nunc augue blandit nunc, eu sollicitudin urna dolor sagittis lacus.</p>
+                      <p class="regular-text">
+                        Las tecnologías relativas a la web y el mundo de las nuevas tecnologías cambia rápidamente,
+                        es inviable no estar dispuesto a estudiar constantemente nuevas técnicas y tendencias.
+                        La formación continua es indispensable para afrontar con seguridad los nuevos retos
+                        que proponen los proyectos actuales.
+                      </p>
 
                     </div>
 
@@ -1299,7 +1294,7 @@
 
                               <div class="card-image waves-effect waves-block waves-light">
 
-                                <h2 class="left-align card-title-top">20011 - 2012</h2>
+                                <h2 class="left-align card-title-top">{{resume.education[0].courses[0].endDate | limitTo: 4}}</h2>
 
                                 <div class="card-img-wrap">
 
@@ -1311,9 +1306,14 @@
 
                               <div class="card-content">
 
-                                <span class="card-title activator brand-text">Masters of Science<i class="mdi-navigation-more-vert right"></i></span>
+                                <span class="card-title activator brand-text">
+                                  <span ng-repeat="course in resume.education[0].courses">
+                                    {{course.title}}
+                                  </span>
+                                  <i class="mdi-navigation-more-vert right"></i>
+                                </span>
 
-                                <p>Oxford University</p>
+                                <p>{{resume.education[0].institution}}</p>
 
                               </div>
 
@@ -1323,16 +1323,23 @@
 
                                 <div class="rev-title-wrap">
 
-                                  <span class="card-title activator brand-text">Masters of Science<i class="mdi-navigation-close right"></i></span>
+                                  <span class="card-title activator brand-text">{{resume.education[0].courses[0].title}}<i class="mdi-navigation-close right"></i></span>
 
-                                  <p>Oxford University</p>
+                                  <p>{{resume.education[0].institution}}</p>
 
                                 </div>
 
                                 <p class="rev-content">
 
-                                  Collaboratively initiate collaborative schemas for high-quality communities. Objectively create sticky relationships via team building outsourcing.
-
+                                  {{resume.education[0].courses[0].summary}}
+                                  <br>
+                                  <a href="{{resume.education[0].courses[0].url}}"> Mooc </a>
+                                  <br>
+                                  <div  class="tag-cloud">
+                                    <span class="badge" ng-repeat="tag in resume.education[0].courses[0].tags">
+                                      {{tag}}
+                                    </span>
+                                  </div>
                                 </p>
 
                               </div>
@@ -1342,155 +1349,192 @@
                           </div> <!-- single education end -->
 
 
-
                           <!-- single education -->
 
-                          <div class="col-sm-4 single-card-box wow fadeInUpSmall" data-wow-delay=".2s" data-wow-duration=".7s">
+                            <div class="col-sm-4 single-card-box wow fadeInUpSmall" data-wow-duration=".7s">
 
-                            <div class="card">
+                              <div class="card">
 
-                              <div class="card-image waves-effect waves-block waves-light">
+                                <div class="card-image waves-effect waves-block waves-light">
 
-                                <h2 class="left-align card-title-top">2005 - 2007</h2>
+                                  <h2 class="left-align card-title-top">{{resume.education[1].courses[0].endDate | limitTo: 4}}</h2>
 
-                                <div class="card-img-wrap">
+                                  <div class="card-img-wrap">
 
-                                  <img class="activator" src="images/grad-cap.png" alt="">
+                                    <img class="activator" src="images/grad-cap.png" alt="">
 
+                                  </div>
+
+                                </div>
+
+                                <div class="card-content">
+
+                                  <span class="card-title activator brand-text">
+                                    <span ng-repeat="course in resume.education[1].courses">
+                                      {{course.title}}<br>
+                                    </span>
+                                    <i class="mdi-navigation-more-vert right"></i>
+                                  </span>
+
+                                  <p>{{resume.education[1].institution}}</p>
+
+                                </div>
+
+                                <!-- Reveal content-->
+
+                                <div class="card-reveal">
+                                  <div ng-repeat="course in resume.education[1].courses">
+                                  <div class="rev-title-wrap">
+
+                                    <span class="card-title activator brand-text">{{course.title}}<i class="mdi-navigation-close right"></i></span>
+
+                                    <p>{{resume.education[1].institution}}</p>
+
+                                  </div>
+
+                                  <p class="rev-content">
+
+                                    {{course.summary}}
+                                    <br>
+                                    <a href="{{course.url}}"> Mooc </a>
+                                    <br>
+                                    <div  class="tag-cloud">
+                                      <span class="badge" ng-repeat="tag in course.tags">
+                                        {{tag}}
+                                      </span>
+                                    </div>
+                                  </p>
+                                 </div>
                                 </div>
 
                               </div>
 
-                              <div class="card-content">
+                            </div> <!-- single education end -->
 
-                                <span class="card-title activator brand-text">Bachelor of Science<i class="mdi-navigation-more-vert right"></i></span>
+                            <!-- single education -->
 
-                                <p>Oxford University</p>
+                              <div class="col-sm-4 single-card-box wow fadeInUpSmall" data-wow-duration=".7s">
 
-                              </div>
+                                <div class="card">
 
-                              <div class="card-reveal">
+                                  <div class="card-image waves-effect waves-block waves-light">
 
-                                <div class="rev-title-wrap">
+                                    <h2 class="left-align card-title-top">{{resume.education[2].courses[0].endDate | limitTo: 4}}</h2>
 
-                                  <span class="card-title activator brand-text">Bachelor of Science<i class="mdi-navigation-close right"></i></span>
+                                    <div class="card-img-wrap">
 
-                                  <p>Oxford University</p>
+                                      <img class="activator" src="images/grad-cap.png" alt="">
 
-                                </div>
+                                    </div>
 
-                                <p class="rev-content">
+                                  </div>
 
-                                  Collaboratively initiate collaborative schemas for high-quality communities. Objectively create sticky relationships via team building outsourcing.
+                                  <div class="card-content">
 
-                                </p>
+                                    <span class="card-title activator brand-text">
+                                      <span ng-repeat="course in resume.education[2].courses">
+                                        {{course.title}}<br>
+                                      </span>
+                                      <i class="mdi-navigation-more-vert right"></i>
+                                    </span>
 
-                              </div>
+                                    <p>{{resume.education[2].institution}}</p>
 
-                            </div>
+                                  </div>
 
-                          </div> <!-- single education -->
+                                  <!-- Reveal content-->
 
+                                  <div class="card-reveal">
+                                    <div ng-repeat="course in resume.education[2].courses">
+                                    <div class="rev-title-wrap">
 
+                                      <span class="card-title activator brand-text">{{course.title}}<i class="mdi-navigation-close right"></i></span>
 
-                        <!-- single education -->
+                                      <p>{{resume.education[2].institution}}</p>
 
-                          <div class="col-sm-4 single-card-box wow fadeInUpSmall" data-wow-delay=".4s" data-wow-duration=".7s">
+                                    </div>
 
-                            <div class="card">
+                                    <p class="rev-content">
 
-                              <div class="card-image waves-effect waves-block waves-light">
-
-                                <h2 class="left-align card-title-top">2005 - 2007</h2>
-
-                                <div class="card-img-wrap">
-
-                                  <img class="activator" src="images/grad-cap.png" alt="">
-
-                                </div>
-
-                              </div>
-
-                              <div class="card-content">
-
-                                <span class="card-title activator brand-text">A Level<i class="mdi-navigation-more-vert right"></i></span>
-
-                                <p>Oxford College</p>
-
-                              </div>
-
-                              <div class="card-reveal">
-
-                                <div class="rev-title-wrap">
-
-                                  <span class="card-title activator brand-text">A Level<i class="mdi-navigation-close right"></i></span>
-
-                                  <p>Oxford College</p>
+                                      {{course.summary}}
+                                      <br>
+                                      <a href="{{course.url}}"> Mooc </a>
+                                      <br>
+                                      <div  class="tag-cloud">
+                                        <span class="badge" ng-repeat="tag in course.tags">
+                                          {{tag}}
+                                        </span>
+                                      </div>
+                                    </p>
+                                   </div>
+                                  </div>
 
                                 </div>
 
-                                <p class="rev-content">
-
-                                  Collaboratively initiate collaborative schemas for high-quality communities. Objectively create sticky relationships via team building outsourcing.
-
-                                </p>
-
-                              </div>
-
-                            </div>
-
-                          </div> <!-- single education -->
+                              </div> <!-- single education end -->
 
 
+                              <!-- single education -->
 
-                        <!-- single education -->
+                                <div class="col-sm-4 single-card-box wow fadeInUpSmall" data-wow-duration=".7s">
 
-                          <div class="col-sm-4 single-card-box">
+                                  <div class="card">
 
-                            <div class="card">
+                                    <div class="card-image waves-effect waves-block waves-light">
 
-                              <div class="card-image waves-effect waves-block waves-light">
+                                      <h2 class="left-align card-title-top">{{resume.education[3].courses[0].endDate | limitTo: 4}}</h2>
 
-                                <h2 class="left-align card-title-top">1995 - 2005</h2>
+                                      <div class="card-img-wrap">
 
-                                <div class="card-img-wrap">
+                                        <img class="activator" src="images/grad-cap.png" alt="">
 
-                                  <img class="activator" src="images/grad-cap.png" alt="">
+                                      </div>
 
-                                </div>
+                                    </div>
 
-                              </div>
+                                    <div class="card-content">
 
-                              <div class="card-content">
+                                      <span class="card-title activator brand-text">
+                                        <span ng-repeat="course in resume.education[3].courses">
+                                          {{course.title}}<br>
+                                        </span>
+                                        <i class="mdi-navigation-more-vert right"></i>
+                                      </span>
 
-                                <span class="card-title activator brand-text">O Level<i class="mdi-navigation-more-vert right"></i></span>
+                                      <p>{{resume.education[3].institution}}</p>
 
-                                <p>Oxford School</p>
+                                    </div>
 
-                              </div>
+                                    <!-- Reveal content-->
 
-                              <div class="card-reveal">
+                                    <div class="card-reveal">
+                                      <div ng-repeat="course in resume.education[3].courses">
+                                      <div class="rev-title-wrap">
 
-                                <div class="rev-title-wrap">
+                                        <span class="card-title activator brand-text">{{course.title}}<i class="mdi-navigation-close right"></i></span>
 
-                                  <span class="card-title activator brand-text">O Level<i class="mdi-navigation-close right"></i></span>
+                                        <p>{{resume.education[3].institution}}</p>
 
-                                  <p>Oxford School</p>
+                                      </div>
 
-                                </div>
+                                      <p class="rev-content">
 
-                                <p class="rev-content">
+                                        {{course.summary}}
+                                        <br>
+                                        <a href="{{course.url}}"> Mooc </a>
+                                        <br>
+                                        <div  class="tag-cloud">
+                                          <span class="badge" ng-repeat="tag in course.tags">
+                                            {{tag}}
+                                          </span>
+                                        </div>
+                                      </p>
+                                     </div>
+                                    </div>
 
-                                  Collaboratively initiate collaborative schemas for high-quality communities. Objectively create sticky relationships via team building outsourcing.
+                                  </div>
 
-                                </p>
-
-                              </div>
-
-                            </div>
-
-                          </div> <!-- single education -->
-
+                                </div> <!-- single education end -->
                         </div>
 
                       </div>
@@ -1522,812 +1566,6 @@
     </section>
 
     <!-- #resume Section end -->
-
-
-
-    <!-- Portfolio Section start -->
-
-    <section id="portfolio" class="scroll-section root-sec white portfolio-wrap">
-
-      <div class="padd-tb-120 brand-bg portfolio-top">
-
-        <div class="portfolio-inner">
-
-          <div class="container">
-
-            <div class="row">
-
-              <div class="col-sm-12">
-
-                <h2 class="title">PORTFOLIO</h2>
-
-                <ul class="inline-menu clearfix portfolio-category" id="portfolio-msnry-sort">
-
-                  <li class="active"><a href="#" data-target="*">All</a>
-
-                  </li>
-
-                  <li><a href="#" data-target=".category-1">Art</a>
-
-                  </li>
-
-                  <li><a href="#" data-target=".category-2">Accessories</a>
-
-                  </li>
-
-                  <li><a href="#" data-target=".category-3">Design</a>
-
-                  </li>
-
-                  <li><a href="#" data-target=".category-4">Fashion</a>
-
-                  </li>
-
-                </ul>
-
-              </div>
-
-            </div>
-
-          </div>
-
-        </div>
-
-        <!-- .container end -->
-
-      </div>
-
-      <div id="portfolioModal" class="modal white">
-
-        <div class="model-img"></div>
-
-        <div class="modal-content">
-
-          <h2 class="title">Lorem ipsum dolor sit fugit dolore.</h2>
-
-          <p class="m-content">A portfolio is a collection of documents and writing that you assemble in order to demonstrate that you have the appropriate prior.</p>
-
-        </div>
-
-
-
-        <div class="modal-footer">
-
-          <a href="#" target="_blank" class="waves-effect btn-flat brand-text modal-action">Live Demo</a>
-
-          <a href="#" class="waves-effect btn-flat brand-text modal-action modal-close">cancel</a>
-
-        </div>
-
-      </div>
-
-
-
-      <div class="portfolio-bottom">
-
-        <div class="container">
-
-          <div class="row">
-
-            <div class="col-sm-12">
-
-              <ul class="clearfix protfolio-item" id="protfolio-msnry">
-
-
-
-              <!-- Single Portfolio-->
-
-                <li class="single-port-item category-1 category-3">
-
-                  <a href="#portfolioModal" class="waves-effect waves-block waves-light modal-trigger" data-image-source="http://placehold.it/650x350" data-title="Your awesome portfolio title" data-content="A portfolio is a collection of documents and writing that you assemble in order to demonstrate that you have the appropriate prior." data-demo-link="#"> <!-- Portfolio pop-up content-->
-
-                    <div class="protfolio-image">
-
-                      <img src="images/portfolio/pf1.jpg" alt="portfolio"> <!-- portfolio thumbnail-->
-
-                      <div class="protfolio-content waves-effect waves-block waves-light">
-
-                        <div class="protfolio-content__inner">
-
-                          <h2 class="p-title">item name</h2>
-
-                        </div>
-
-                      </div>
-
-                      <div class="p-overlay"></div>
-
-                    </div>
-
-                  </a>
-
-                </li>
-
-                <!--/ single portfolio -->
-
-
-
-                <!-- Single Portfolio-->
-
-                <li class="single-port-item category-2 category-1">
-
-                  <a href="#portfolioModal" class="waves-effect waves-block waves-light modal-trigger" data-image-source="http://placehold.it/650x350" data-title="Your awesome portfolio title" data-content="A portfolio is a collection of documents and writing that you assemble in order to demonstrate that you have the appropriate prior." data-demo-link="#">
-
-                    <div class="protfolio-image">
-
-                      <img src="images/portfolio/pf2.jpg" alt="portfolio">
-
-                      <div class="protfolio-content waves-effect waves-block waves-light">
-
-                        <div class="protfolio-content__inner">
-
-                          <h2 class="p-title">item name</h2>
-
-                        </div>
-
-                      </div>
-
-                      <div class="p-overlay"></div>
-
-                    </div>
-
-                  </a>
-
-                </li>
-
-                <!--/ single portfolio -->
-
-
-
-                <!-- Single Portfolio-->
-
-                <li class="single-port-item category-1 category-2">
-
-                  <a href="#portfolioModal" class="waves-effect waves-block waves-light modal-trigger" data-image-source="http://placehold.it/650x350" data-title="Your awesome portfolio title" data-content="A portfolio is a collection of documents and writing that you assemble in order to demonstrate that you have the appropriate prior." data-demo-link="#">
-
-                    <div class="protfolio-image">
-
-                      <img src="images/portfolio/pf3.jpg" alt="portfolio">
-
-                      <div class="protfolio-content waves-effect waves-block waves-light">
-
-                        <div class="protfolio-content__inner">
-
-                          <h2 class="p-title">item name</h2>
-
-                        </div>
-
-                      </div>
-
-                      <div class="p-overlay"></div>
-
-                    </div>
-
-                  </a>
-
-                </li>
-
-                <!--/ single portfolio -->
-
-
-
-                <!-- Single Portfolio-->
-
-                <li class="single-port-item category-3">
-
-                  <a href="#portfolioModal" class="waves-effect waves-block waves-light modal-trigger" data-image-source="http://placehold.it/650x350" data-title="Your awesome portfolio title" data-content="A portfolio is a collection of documents and writing that you assemble in order to demonstrate that you have the appropriate prior." data-demo-link="#">
-
-                    <div class="protfolio-image">
-
-                      <img src="images/portfolio/pf4.jpg" alt="portfolio">
-
-                      <div class="protfolio-content waves-effect waves-block waves-light">
-
-                        <div class="protfolio-content__inner">
-
-                          <h2 class="p-title">item name</h2>
-
-                        </div>
-
-                      </div>
-
-                      <div class="p-overlay"></div>
-
-                    </div>
-
-                  </a>
-
-                </li>
-
-                <!--/ single portfolio -->
-
-
-
-                <!-- Single Portfolio-->
-
-                <li class="single-port-item category-1 category-3 category-4">
-
-                  <a href="#portfolioModal" class="waves-effect waves-block waves-light modal-trigger" data-image-source="http://placehold.it/650x350" data-title="Your awesome portfolio title" data-content="A portfolio is a collection of documents and writing that you assemble in order to demonstrate that you have the appropriate prior." data-demo-link="#">
-
-                    <div class="protfolio-image">
-
-                      <img src="images/portfolio/pf5.jpg" alt="portfolio">
-
-                      <div class="protfolio-content waves-effect waves-block waves-light">
-
-                        <div class="protfolio-content__inner">
-
-                          <h2 class="p-title">item name</h2>
-
-                        </div>
-
-                      </div>
-
-                      <div class="p-overlay"></div>
-
-                    </div>
-
-                  </a>
-
-                </li>
-
-                <!--/ single portfolio -->
-
-
-
-                <!-- Single Portfolio-->
-
-                <li class="single-port-item category-2 category-4">
-
-                  <a href="#portfolioModal" class="waves-effect waves-block waves-light modal-trigger" data-image-source="http://placehold.it/650x350" data-title="Your awesome portfolio title" data-content="A portfolio is a collection of documents and writing that you assemble in order to demonstrate that you have the appropriate prior." data-demo-link="#">
-
-                    <div class="protfolio-image">
-
-                      <img src="images/portfolio/pf6.jpg" alt="portfolio">
-
-                      <div class="protfolio-content waves-effect waves-block waves-light">
-
-                        <div class="protfolio-content__inner">
-
-                          <h2 class="p-title">item name</h2>
-
-                        </div>
-
-                      </div>
-
-                      <div class="p-overlay"></div>
-
-                    </div>
-
-                  </a>
-
-                </li>
-
-                <!--/ single portfolio -->
-
-
-
-              </ul>
-
-              <!-- portfolio load more button-->
-
-              <a id="portfolio-item-loader" href="#" class="btn-floating btn-large waves-effect waves-light brand-bg"><i class="mdi-content-add"></i></a>
-
-            </div>
-
-          </div>
-
-        </div>
-
-      </div>
-
-    </section>
-
-    <!-- #portfolio Section end -->
-
-
-
-    <!-- tags Section -->
-
-    <section id="tag-cloud" class="scroll-section brand-bg team-wrap">
-      <div class="tag-cloud">
-        <span class="badge" ng-repeat="tag in resume.tags">
-          <i class="fa fa-{{tag.icon}}"></i> {{tag.tag}}
-        </span>
-      </div>
-    </section>
-
-    <!-- tag Section end -->
-
-
-
-    <!-- Funfacts Section end -->
-
-    <section id="funfacts" class="root-sec grey lighten-5 funfact-wrap">
-
-    <div class="sec-inner padd-tb-120">
-
-      <div class="container">
-
-        <div class="row">
-
-          <div class="funfact-inner">
-
-            <div class="col-sm-4 funfact-box">
-
-              <div class="center-align card-panel white">
-
-                <div class="feature-box-outer">
-
-                  <div class="funfact-box-inner">
-
-                    <div class="clearfix ">
-
-                      <i class="mdi-editor-insert-emoticon"></i>
-
-                      <span class="num countNumb">150</span>
-
-                    </div>
-
-                    <div class="context">Happy clients</div>
-
-                  </div>
-
-                </div>
-
-              </div>
-
-            </div> <!-- ./single fun fact box -->
-
-            <div class="col-sm-4 funfact-box">
-
-              <div class="center-align card-panel white">
-
-                <div class="feature-box-outer">
-
-                  <div class="funfact-box-inner">
-
-                    <div class="clearfix ">
-
-                      <i class="mdi-action-wallet-travel"></i>
-
-                      <span class="num countNumb">230</span>
-
-                    </div>
-
-                    <div class="context">Project Completed</div>
-
-                  </div>
-
-                </div>
-
-              </div>
-
-            </div> <!-- ./single fun fact box -->
-
-            <div class="col-sm-4 funfact-box">
-
-              <div class="center-align card-panel white">
-
-                <div class="feature-box-outer">
-
-                  <div class="funfact-box-inner">
-
-                    <div class="clearfix ">
-
-                      <i class="mdi-action-wallet-giftcard"></i>
-
-                      <span class="num countNumb">79</span>
-
-                    </div>
-
-                    <div class="context">Award Won</div>
-
-                  </div>
-
-                </div>
-
-              </div>
-
-            </div> <!-- ./single fun fact box -->
-
-          </div>
-
-        </div>
-
-
-
-      </div>  <!-- .container end -->
-
-    </div>
-
-    </section>
-
-    <!-- #funfacts Section end -->
-
-
-
-    <!-- Testimonial Section end -->
-
-    <section id="testimonial" class="scroll-section root-sec brand-bg padd-tb-120 testimonial-wrap">
-
-      <div class="container">
-
-        <div class="row">
-
-          <div class="testimonial-inner">
-
-            <div class="col-sm-12 col-md-10 card-box-wrap">
-
-              <div class="row">
-
-                <div class="clearfix section-head testimonial-text">
-
-                  <div class="col-sm-12">
-
-                    <h2 class="title">testimonial</h2>
-
-                    <p class="regular-text">Aliquam lobortis. Maecenas vestibulum mollis diam. Pellentesque auctor neque nec urna. Nulla sit amet est. Aenean posuere tortor sed cursus feugiat, nunc augue blandit nunc, eu sollicitudin urna dolor sagittis lacus.</p>
-
-                  </div>
-
-                </div>
-
-                <div class="col-lg-12">
-
-                  <div class="overflow-hidden">
-
-                    <div class="row">
-
-                      <div id="testimonialSlider" class="clearfix card-element-wrapper">
-
-                        <div class="col-sm-6 single-card-box wow fadeInUpSmall" data-wow-duration=".7s">
-
-                          <div class="card">
-
-                            <div class="card-image waves-effect waves-block waves-light">
-
-                              <div class="card-img-wrap">
-
-                                <img class="activator" src="images/client5.png" alt="">
-
-                                <p class="saying-about">Amazing theme, amazing code and especially amazing support! I Really love your work.</p>
-
-                              </div>
-
-                            </div>
-
-                            <div class="card-content">
-
-                              <span class="card-title activator brand-text">Jonh Smith -</span>
-
-                              <a href="#">CEO, Apple Inc</a>
-
-                            </div>
-
-                          </div>
-
-                        </div> <!-- ./single testimonial box -->
-
-                        <div class="col-sm-6 single-card-box wow fadeInUpSmall" data-wow-delay=".2s" data-wow-duration=".7s">
-
-                          <div class="card">
-
-                            <div class="card-image waves-effect waves-block waves-light">
-
-                              <div class="card-img-wrap">
-
-                                <img class="activator" src="images/client1.png" alt="">
-
-                                <p class="saying-about">Amazing theme, amazing code and especially amazing support! I Really love your work.</p>
-
-                              </div>
-
-                            </div>
-
-                            <div class="card-content">
-
-                              <span class="card-title activator brand-text">Jonh Smith -</span>
-
-                              <a href="#">CEO, Apple Inc</a>
-
-                            </div>
-
-                          </div>
-
-                        </div> <!-- ./single testimonial box -->
-
-                        <div class="col-sm-6 single-card-box">
-
-                          <div class="card">
-
-                            <div class="card-image waves-effect waves-block waves-light">
-
-                              <div class="card-img-wrap">
-
-                                <img class="activator" src="images/client2.png" alt="">
-
-                                <p class="saying-about">Amazing theme, amazing code and especially amazing support ! I Really love your work.</p>
-
-                              </div>
-
-                            </div>
-
-                            <div class="card-content">
-
-                              <span class="card-title activator brand-text">Jonh Smith -</span>
-
-                              <a href="#">CEO, Apple Inc</a>
-
-                            </div>
-
-                          </div>
-
-                        </div> <!-- ./single testimonial box -->
-
-                        <div class="col-sm-6 single-card-box">
-
-                          <div class="card">
-
-                            <div class="card-image waves-effect waves-block waves-light">
-
-                              <div class="card-img-wrap">
-
-                                <img class="activator" src="images/client3.png" alt="">
-
-                                <p class="saying-about">Amazing theme, amazing code and especially amazing support ! I Really love your work.</p>
-
-                              </div>
-
-                            </div>
-
-                            <div class="card-content">
-
-                              <span class="card-title activator brand-text">Jonh Smith -</span>
-
-                              <a href="#">CEO, Apple Inc</a>
-
-                            </div>
-
-                          </div>
-
-                        </div> <!-- ./single testimonial box -->
-
-                        <div class="col-sm-6 single-card-box">
-
-                          <div class="card">
-
-                            <div class="card-image waves-effect waves-block waves-light">
-
-                              <div class="card-img-wrap">
-
-                                <img class="activator" src="images/client4.png" alt="">
-
-                                <p class="saying-about">Amazing theme, amazing code and especially amazing support ! I Really love your work.</p>
-
-                              </div>
-
-                            </div>
-
-                            <div class="card-content">
-
-                              <span class="card-title activator brand-text">Jonh Smith -</span>
-
-                              <a href="#">CEO, Apple Inc</a>
-
-                            </div>
-
-                          </div>
-
-                        </div> <!-- ./single testimonial box -->
-
-                      </div> <!-- #testimonialSlider end -->
-
-                    </div>
-
-                  </div>
-
-                </div>
-
-              </div>
-
-            </div>
-
-            <div class="btn-wrapp tmo-ctrl">
-
-              <a class="btn-floating waves-effect waves-light btn-large white go go-left"><i class="mdi-navigation-chevron-left brand-text"></i></a>
-
-              <a class="btn-floating waves-effect waves-light btn-large white go go-right"><i class="mdi-navigation-chevron-right brand-text"></i></a>
-
-            </div>
-
-          </div>
-
-        </div>
-
-      </div> <!-- ./container end -->
-
-    </section>
-
-    <!-- #testimonial Section end -->
-
-
-
-    <!-- Blog Section end -->
-
-    <section id="blog" class="scroll-section root-sec grey lighten-5 padd-tb-120 blog-wrap">
-
-      <div class="container">
-
-        <div class="row">
-
-          <div class="blog-inner">
-
-            <div class="col-sm-12 card-box-wrap">
-
-              <div class="row">
-
-                <div class="clearfix section-head blog-text">
-
-                  <div class="col-sm-10">
-
-                    <h2 class="title">Blog</h2>
-
-                    <p class="regular-text">A Web page that serves as a publicly accessible personal journal for an individual. Typically updated daily, blogs often reflect the personality of the author.</p>
-
-                  </div>
-
-                </div>
-
-                <div class="clearfix card-element-wrapper" id="blog-posts">
-
-                  <article class="col-sm-6 col-md-4 single-card-box single-post">
-
-                    <div class="card wow fadeInUpSmall" data-wow-duration=".7s">
-
-                      <div class="card-image">
-
-                        <div class="card-img-wrap">
-
-                          <div class="blog-post-thumb waves-effect waves-block waves-light">
-
-                            <a href="single.html"><img class="activator" src="images/blog1.jpg" alt="">
-
-                            </a>
-
-                          </div>
-
-                          <div class="post-body">
-
-                            <a href="single.html" class="post-title-link brand-text"><h2 class="post-title">Awesome Post Title</h2></a>
-
-                            <p class="post-content">In consectetuer turpis ut velit. Sed lectus. Ut varius tincidunt libero. Vivamus euismod mauris. Vestibulum fringilla pede sit amet augue. Ut varius tincidunt libero. Pellentesque dapibus hendrerit tortor. </p>
-
-                          </div>
-
-                        </div>
-
-                      </div>
-
-                      <div class="clearfix card-content">
-
-                        <a href="#" class="left js-favorite" title="Love this"><i class="mdi-action-favorite"></i><span class="numb">15</span></a>
-
-                        <a href="single.html" class="brand-text right waves-effect">Read More</a>
-
-                      </div>
-
-                    </div>
-
-                  </article> <!-- ./single blog post end -->
-
-                  <article class="col-sm-6 col-md-4  single-card-box single-post">
-
-                    <div class="card wow fadeInUpSmall" data-wow-delay=".2s" data-wow-duration=".7s">
-
-                      <div class="card-image">
-
-                        <div class="card-img-wrap">
-
-                          <div class="blog-post-thumb waves-effect waves-block waves-light">
-
-                            <a href="single.html"><img class="activator" src="images/blog2.jpg" alt="">
-
-                            </a>
-
-                          </div>
-
-                          <div class="post-body">
-
-                            <a href="single.html" class="post-title-link brand-text"><h2 class="post-title">An Image Post</h2></a>
-
-                            <p class="post-content">In consectetuer turpis ut velit. Sed lectus. Ut varius tincidunt libero. Vivamus euismod mauris. Vestibulum fringilla pede sit amet augue. Ut varius tincidunt libero. Pellentesque dapibus hendrerit tortor. </p>
-
-                          </div>
-
-                        </div>
-
-                      </div>
-
-                      <div class="clearfix card-content">
-
-                        <a href="#" class="left js-favorite active" title="Love this"><i class="mdi-action-favorite"></i><span class="numb">23</span></a>
-
-                        <a href="single.html" class="brand-text right waves-effect">Read More</a>
-
-                      </div>
-
-                    </div>
-
-                  </article> <!-- ./single blog post end -->
-
-                  <article class="col-sm-6 col-md-4 single-card-box single-post">
-
-                    <div class="card wow fadeInUpSmall" data-wow-delay=".4s" data-wow-duration=".7s">
-
-                      <div class="card-image">
-
-                        <div class="card-img-wrap">
-
-                          <div class="blog-post-thumb waves-effect waves-block waves-light">
-
-                            <a href="single.html"><img class="activator" src="images/blog3.jpg" alt="">
-
-                            </a>
-
-                          </div>
-
-                          <div class="post-body">
-
-                            <a href="single.html" class="post-title-link brand-text"><h2 class="post-title">Another Image Post</h2></a>
-
-                            <p class="post-content">In consectetuer turpis ut velit. Sed lectus. Ut varius tincidunt libero. Vivamus euismod mauris. Vestibulum fringilla pede sit amet augue. Ut varius tincidunt libero. Pellentesque dapibus hendrerit tortor. </p>
-
-                          </div>
-
-                        </div>
-
-                      </div>
-
-                      <div class="clearfix card-content">
-
-                        <a href="#" class="left js-favorite" title="Love this"><i class="mdi-action-favorite"></i><span class="numb">17</span></a>
-
-                        <a href="single.html" class="brand-text right waves-effect">Read More</a>
-
-                      </div>
-
-                    </div>
-
-                  </article> <!-- ./single blog post end -->
-
-                </div>
-
-                <div class="clearfix left-align">
-
-                  <div class="col-sm-12">
-
-                    <a href="blog.html" class="waves-effect waves-light btn-large load-more">See More</a>
-
-                  </div>
-
-                </div>
-
-              </div>
-
-            </div>
-
-          </div>
-
-        </div>
-
-      </div> <!-- ./container -->
-
-    </section>
-
-    <!-- #blog Section end -->
-
-
 
     <!-- Contact Section end -->
 

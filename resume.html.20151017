@@ -1613,6 +1613,17 @@
     </section>
 
     <!-- #resume Section end -->
+    <!-- tags Section -->
+
+    <section id="tag-cloud" class="scroll-section brand-bg team-wrap">
+      <div class="tag-cloud">
+        <span class="badge" ng-repeat="tag in resume.tags">
+          <i class="fa fa-{{tag.icon}}"></i> {{tag.tag}}
+        </span>
+      </div>
+    </section>
+
+    <!-- tag Section end -->
 
 
 

@@ -100,8 +100,8 @@
     "companyLogo": "images/e-sacyl.png",
     "position": "Técnico - Analista - programador",
     "website": "http://www.saludcastillayleon.es/CHLeon/es/hospital-leon",
-    "startDate": "1999-05-01",
-    "endDate": "2000-08-31",
+    "startDate": "1999-04-01",
+    "endDate": "1999-08-31",
     "summary": "Desarrollo y análisis de aplicaciónes en entorno corporativo, reparación de ordenadores y gestión de redes y servidores.",
     "highlights": [
       "Desarrollo y anaísis de aplicaciónes móviles para Telefónica I+D en proyectos de investigación."
@@ -112,45 +112,78 @@
     "institution": "MiriadaX",
     "area": "Ciencias Tecnológicas",
     "studyType": "Mooc",
-    "startDate": "2015-05-14",
-    "endDate": "2015-06-01",
-    "gpa": "",
-    "certificateUrl": "https://miriadax.net/files/10132/badge/ae8e4a66-d32f-437a-98da-0e40368f5971.pdf",
     "courses": [
-      "Desarrollo de servicios en la nube con HTML5, Javascript y node.js"
-    ]
-  },{
-    "institution": "CICE ",
-    "area": "Master en redes y comunicaciones",
-    "studyType": "Master",
-    "startDate": "2003-09-15",
-    "endDate": "2004-07-01",
-    "gpa": "",
-    "courses": [
-      ""
-    ]
-  },{
-    "institution": "CICE ",
-    "area": "Master en redes y comunicaciones",
-    "studyType": "Master",
-    "startDate": "2003-09-15",
-    "endDate": "2004-07-01",
-    "gpa": "",
-    "courses": [
-      ""
+      {
+        "title": "Desarrollo de servicios en la nube con HTML5, Javascript y node.js (UPM)",
+        "url": "https://miriadax.net/files/10132/badge/ae8e4a66-d32f-437a-98da-0e40368f5971.pdf",
+        "studyType": "Mooc",
+        "startDate": "2015-05-14",
+        "endDate": "2015-06-01",
+        "summary": "Curso de programación en JavaScript y de introducción al diseño de aplicaciones Web de servidor utilizando node.js, express.js y HTML5. El curso incluye también el el despliegue de servicios de servidor en la nube e introduce técnicas básicas de ingeniería software",
+        "gpa": "100%",
+        "tags": ["Node.js","Express.js","HTML5", "javaScript", "Heroku","Backend"]
+      }
     ]
   },
   {
-    "institution": "María Auxiliadora",
-    "area": "Desarrollo de Aplicaciones informáticas (DAI)",
-    "studyType": "Técnico Superior",
-    "startDate": "1997-09-15",
-    "endDate": "1999-07-01",
-    "gpa": "",
+    "institution": "MongoDB University",
+    "area": "Ciencias Tecnológicas",
+    "studyType": "Mooc",
     "courses": [
-      ""
+
+      {
+      "title" : "M102: MongoDB for DBAs",
+      "url" : "http://university.mongodb.com/course_completion/20183eeb8d2c4f40bd7de0bb96659f26",
+      "gpa": "100%",
+      "startDate": "2015-05-14",
+      "endDate": "2015-06-19",
+      "summary": "Walk through the installing MongoDB. Learn about JSON and Mongo's extensive query capabilities through the Mongo shell, importing and exporting data into Mongo. Replication and fault tolerance. Scaling out with MongoDB, including indexing, performance tuning, monitoring, and sharding. Backups and recovery.",
+      "tags": ["DBA","noSQL","Big Data", "Data Mining", "Administrador base de datos", "clustering","replication", "scaling", "indexing"]
+      },
+      {
+      "title" : "M101JS: MongoDB for Node.js Developers",
+      "url" : "http://university.mongodb.com/course_completion/e3f53af418e7402099731f674290827d",
+      "gpa": "100%",
+      "startDate": "2015-05-14",
+      "endDate": "2015-06-19",
+      "summary": "Learn basic of MongoDB, JSON, schema design, querying, insertion of data, indexing and working with language drivers. The course project involves building a blogging platform with MongoDB. Code examples will be in Node.js.",
+      "tags": ["Programming","noSQL","Node.js", "javaScript", "Mongoose", "JSON","shell"]
+      }
     ]
-  }],
+  },
+  {
+    "institution": "CICE",
+    "area": "Ciencias de la computación",
+    "studyType": "Master",
+    "courses": [
+      {
+      "title" : "Master profesional avanzado en redes y comunicaciones CISCO, Linux y Microsoft",
+      "url" : "http://cice.es/",
+      "gpa": "100%",
+      "startDate": "2003-09-14",
+      "endDate": "2004-06-19",
+      "summary": "Máster avalado y homologado por CISCO, Linux foundation y Microsoft, Combina profundos conocimientos de redes e Internet con la capacidad de resolución de incidencias en situaciones de urgencia, y acredita que los profesionales poseen conocimientos avanzados sobre planificación, gestión, seguridad y optimización de Redes CISCO, servidores Linux y Microsoft server. ",
+      "tags": ["Cisco","CCNA","Linux","Microsoft","MCSA","Networking","SysAdmin","Administrador de Sistemas"]
+      }
+    ]
+  },{
+    "institution": "Centro María Auxiliadora",
+    "area": "Ciencias de la computación",
+    "studyType": "Master",
+    "courses": [
+      {
+      "title" : "CFGS Desarrollo de Aplicaciones informáticas (DAI)",
+      "url" : "http://www.cmaleon.es/",
+      "gpa": "100%",
+      "studyType": "Ciclo Formativo de Gado Superior",
+      "startDate": "1997-09-15",
+      "endDate": "1999-07-01",
+      "summary": "Máster avalado y homologado por CISCO, Linux foundation y Microsoft, Combina profundos conocimientos de redes e Internet con la capacidad de resolución de incidencias en situaciones de urgencia, y acredita que los profesionales poseen conocimientos avanzados sobre planificación, gestión, seguridad y optimización de Redes CISCO, servidores Linux y Microsoft server. ",
+      "tags": ["C++","Visual Basic","Cobol","SQL","Unix-Linux","Networking","Oracle","Administrador de Sistemas", "Bases de datos"]
+      }
+    ]
+  }
+],
   "awards": [{
     "title": "Award",
     "date": "2014-11-01",
