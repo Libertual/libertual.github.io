@@ -1557,6 +1557,10 @@ span.num {
   color: #55acee;
 }
 
+.social-icons li a.github:hover {
+  color: #000;
+}
+
 .social-icons li a.google-plus:hover {
   color: #dd4b39;
 }
@@ -2078,7 +2082,8 @@ span.num {
 /* Libertual classes */
 
 .logo-libertual {
-  font-family: 'Signika', sans-serif;
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: bold;
   color: #555;
   display: block;
   font-size: 3em;

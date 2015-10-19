@@ -26,24 +26,24 @@
       "network": "Twitter",
       "username": "@Libertual",
       "url": "http://twitter.com/libertual",
-      "icon": "fa fa-twitter"
+      "icon": "twitter"
     },
     {
       "network": "Google+",
       "username": "@Libertual",
       "url": "https://plus.google.com/+PedroMacíasLibertual/",
-      "icon": "fa fa-google-plus"
+      "icon": "google-plus"
     },
     {"network": "Facebook",
     "username": "Libertual",
     "url": "https://www.facebook.com/Libertual",
-    "icon": "fa fa-facebook"
+    "icon": "facebook"
 
       },
       {"network": "GitHub",
       "username": "Libertual",
       "url": "https://github.com/Libertual",
-      "icon": "fa fa-github-alt"
+      "icon": "github"
       }
     ]
   },
