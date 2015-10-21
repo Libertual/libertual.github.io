@@ -16,7 +16,9 @@ var gulp = require('gulp'),
     minifyHtml = require('gulp-minify-html'),
     rev = require('gulp-rev'),
     sass = require('gulp-sass'),
-    uncss = require('gulp-uncss');
+    uncss = require('gulp-uncss'),
+    imagemin = require('gulp-imagemin'),
+    pngcrush = require('imagemin-pngcrush');
     //wiredep = require('wiredep').stream,
 
 gulp.task('clean', function () {
@@ -68,7 +70,7 @@ gulp.task('inject', function() {
   return gulp.src('./src/index.html')
   .pipe(inject(gulp.src('./app/js/app.js'), {starttag: '<!-- inject:app:{{ext}} -->', ignorePath: '/app'}))
   .pipe(inject(
-    gulp.src(['./app/**/*.js']).pipe(angularFilesort()), {
+    gulp.src(['./app/**/*.js','!./app/js/app.js']).pipe(angularFilesort()), {
       read: false,
       ignorePath: '/app'
     }))
@@ -91,6 +93,7 @@ gulp.task('compress', function() {
     .pipe(gulp.dest('./dist'));
 });
 
+// Prueba
 gulp.task('usemin', function() {
   return gulp.src('./app/index.html')
     .pipe(usemin({
@@ -125,5 +128,15 @@ gulp.task('copy', function() {
     .pipe(gulp.dest('./dist'));
 });
 
+gulp.task('images', function() {
+  gulp.src('./app/images/*.{png,jpg,jpeg,gif,svg}')
+    .pipe(imagemin({
+      progressive: true,
+      svgoPlugins: [{removeViewBox: false}],
+      use: [pngcrush()]
+    }))
+    .pipe(gulp.dest('./dist/images'));
+});
+
 gulp.task('default', ['clean','sass','inject']);
-gulp.task('build', ['compress', 'copy', 'uncss']);
+gulp.task('build', ['compress', 'copy', 'uncss','images']);
