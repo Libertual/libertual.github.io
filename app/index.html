@@ -32,26 +32,16 @@
 
   <!-- Stylesheets -->
 
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" media="screen,projection" />
 
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.95.1/css/materialize.min.css" media="screen,projection">
 
   <!-- build:css css/style.min.css -->
   <!-- inject:css -->
   <link rel="stylesheet" href="/css/animate.min.css">
-  <link rel="stylesheet" href="/css/app.css">
   <link rel="stylesheet" href="/css/bootstrap.css">
-  <link rel="stylesheet" href="/css/main.css">
+  <link rel="stylesheet" href="/css/libertual-style.css">
   <link rel="stylesheet" href="/css/normalize.css">
   <link rel="stylesheet" href="/css/responsive.css">
-  <link rel="stylesheet" href="/css/colors/color1.css">
-  <link rel="stylesheet" href="/css/colors/color2.css">
-  <link rel="stylesheet" href="/css/colors/color3.css">
-  <link rel="stylesheet" href="/css/colors/color4.css">
-  <link rel="stylesheet" href="/css/colors/color5.css">
-  <link rel="stylesheet" href="/css/colors/color6.css">
-  <link rel="stylesheet" href="/css/colors/color7.css">
-  <link rel="stylesheet" href="/css/colors/color8.css">
   <link rel="stylesheet" href="/libs/owl-carousel/owl.carousel.css">
   <link rel="stylesheet" href="/libs/owl-carousel/owl.theme.css">
   <link rel="stylesheet" href="/libs/owl-carousel/owl.transitions.css">
@@ -66,84 +56,6 @@
 
 <body ng-controller="ResumeCtrl">
 
-
-
-
-
-  <!-- start option panel -->
-
-  <div id="switch">
-
-      <div class="content-switcher">
-
-          <p class="brand-text">Color Options:</p>
-
-          <ul class="header">
-
-              <li><a href="#" onclick="setActiveStyleSheet('color1'); return false;" class="button color switch" style="background-color:#00bcd4"></a></li>
-
-              <li><a href="#" onclick="setActiveStyleSheet('color2'); return false;" class="button color switch" style="background-color:#ff4081"></a></li>
-
-              <li><a href="#" onclick="setActiveStyleSheet('color3'); return false;" class="button color switch" style="background-color:#C043D5"></a></li>
-
-              <li><a href="#" onclick="setActiveStyleSheet('color4'); return false;" class="button color switch" style="background-color:#73D077"></a></li>
-
-              <li><a href="#" onclick="setActiveStyleSheet('color5'); return false;" class="button color switch" style="background-color:#FE7448"></a></li>
-
-              <li><a href="#" onclick="setActiveStyleSheet('color6'); return false;" class="button color switch" style="background-color:#1ABBAC"></a></li>
-
-              <li><a href="#" onclick="setActiveStyleSheet('color7'); return false;" class="button color switch" style="background-color:#EAB82E"></a></li>
-
-              <li><a href="#" onclick="setActiveStyleSheet('color8'); return false;" class="button color switch" style="background-color:#799CAC"></a></li>
-
-          </ul>
-
-          <p class="brand-text">Opciones:</p>
-
-          <div class="menu-select" title="The menu will display in all devices">
-
-              <input type="radio" id="menu1" name="intelligent-menu">
-
-              <label for="menu1">Fixed</label>
-
-          </div>
-
-          <div class="menu-select" title="The menu will display or hide in all devices depending on scroll">
-
-              <input type="radio" id="menu2" name="intelligent-menu"  checked="checked">
-
-              <label for="menu2">Intelligent ( Auto Hide )</label>
-
-          </div>
-
-          <div class="menu-select" title="Fixed menu will apply in non-mobile devices and Intelligent menu will apply in mobile devices">
-
-              <input type="radio" id="menu3" name="intelligent-menu">
-
-              <label for="menu3">Mobile Intelligent</label>
-
-          </div>
-
-          <div id="hide">
-
-              <i class="fa fa-times"></i>
-
-          </div>
-
-      </div>
-
-  </div>
-
-  <div id="show" class="btn-floating waves-effect waves-light btn-large brand-text">
-
-      <i class="fa fa-cog"></i>
-
-  </div>
-
-  <!-- end option panel -->
-
-
-
   <!-- Preloader -->
 
     <div id="preloader">
@@ -154,9 +66,8 @@
 
         </div>
 
-    </div><!--preloader end-->
-
-
+    </div>
+  <!--preloader end-->
 
   <!-- Main Container -->
 
@@ -1768,13 +1679,13 @@
   <script src="/js/gmaps.js"></script>
   <script src="/js/detectmobilebrowser.js"></script>
   <script src="/js/common.js"></script>
-  <script src="/js/1-main.js"></script>
   <!-- endinject -->
   <!-- endbuild -->
 
   <!-- build:js js/app.min.js -->
   <!-- inject:app:js -->
-  <script src="/js/app.js"></script>
+  <script src="/js/libertual-app.js"></script>
+  <script src="/js/libertual-main.js"></script>
   <!-- endinject -->
   <!-- endbuild -->
 

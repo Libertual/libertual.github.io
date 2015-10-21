@@ -2,7 +2,7 @@
 
 *   MaterialX Media Queries
 
-TOC : 
+TOC :
 
 1. screenwidth greater than 1024px (Medium Screen/Large Tablets)
 2. screenwidth less than 1024px (Medium Screen/Large Tablets)
@@ -199,8 +199,8 @@ TOC :
         padding: 80px 0;
     }
 
-    .about-inner, .skill-inner, .experience-inner, 
-    .education-inner,  .portfolio-inner, .team-inner, 
+    .about-inner, .skill-inner, .experience-inner,
+    .education-inner,  .portfolio-inner, .team-inner,
     .funfact-inner, .testimonial-inner, .contact-inner {
         padding: 0 20px;
     }
@@ -429,8 +429,8 @@ TOC :
         font-size: 12px;
     }
 
-    .about-inner, .skill-inner, .experience-inner, 
-    .education-inner, .portfolio-inner, .team-inner, 
+    .about-inner, .skill-inner, .experience-inner,
+    .education-inner, .portfolio-inner, .team-inner,
     .funfact-inner, .testimonial-inner, .blog-inner, .contact-inner {
         padding: 0;
     }

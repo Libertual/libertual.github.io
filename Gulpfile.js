@@ -1,4 +1,3 @@
-
 // File: Gulpfile.js
 'use strict';
 var gulp = require('gulp'),
@@ -26,7 +25,7 @@ gulp.task('clean', function () {
     });
 // Servidor web de desarrollo
 
-gulp.task('server', function() {
+gulp.task('server-test', function() {
   gulp.src('./app')
     .pipe(webserver({
       livereload: true,
@@ -56,7 +55,7 @@ gulp.task('jshint', function() {
 });
 
 gulp.task('sass', function() {
-    gulp.src('./src/scss/**/*.scss')
+    gulp.src('./src/scss/libertual-style.scss')
         .pipe(sass().on('error', sass.logError))
         .pipe(gulp.dest('./app/css/'));
 });
@@ -65,12 +64,12 @@ gulp.task('sass', function() {
 // para inyectarlos en el index.html
 
 gulp.task('inject', function() {
-  gulp.src('./src/js/app.js')
+  gulp.src('./src/js/libertual-*.js')
     .pipe(gulp.dest('./app/js'));
   return gulp.src('./src/index.html')
-  .pipe(inject(gulp.src('./app/js/app.js'), {starttag: '<!-- inject:app:{{ext}} -->', ignorePath: '/app'}))
+  .pipe(inject(gulp.src('./app/js/libertual-*.js'), {starttag: '<!-- inject:app:{{ext}} -->', ignorePath: '/app'}))
   .pipe(inject(
-    gulp.src(['./app/**/*.js','!./app/js/app.js']).pipe(angularFilesort()), {
+    gulp.src(['./app/**/*.js','!./app/js/libertual-*.js']).pipe(angularFilesort()), {
       read: false,
       ignorePath: '/app'
     }))
@@ -93,19 +92,6 @@ gulp.task('compress', function() {
     .pipe(gulp.dest('./dist'));
 });
 
-// Prueba
-gulp.task('usemin', function() {
-  return gulp.src('./app/index.html')
-    .pipe(usemin({
-      css: [ rev() ],
-      html: [ minifyHtml({ empty: true }) ],
-      js: [ uglify(), rev() ],
-      inlinejs: [ uglify() ],
-      inlinecss: [ minifyCss(), 'concat' ]
-    }))
-    .pipe(gulp.dest('dist/'));
-});
-
 // Elimina el CSS que no es utilizado para reducir el pesodel archivo
 gulp.task('uncss', function() {
   gulp.src('./dist/css/style.min.css')
@@ -115,9 +101,9 @@ gulp.task('uncss', function() {
     .pipe(gulp.dest('./dist/css'));
 });
 
-
 // Copia el contenido de los estáticos e index.html al directorio
 // de producción sin tags de comentarios
+
 gulp.task('copy', function() {
   gulp.src('./app/index.html')
     .pipe(useref())
@@ -127,6 +113,8 @@ gulp.task('copy', function() {
   gulp.src('./src/resume.json')
     .pipe(gulp.dest('./dist'));
 });
+
+// Copia y optimiza las imagenes
 
 gulp.task('images', function() {
   gulp.src('./app/images/*.{png,jpg,jpeg,gif,svg}')
