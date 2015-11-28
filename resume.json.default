@@ -1,0 +1,358 @@
+{
+  "basics": {
+    "name": "John Locke",
+    "status": "Full Stack Web Developer",
+    "birthdate": "1977-08-12T23:10:00.000Z",
+    "pictures": {
+      "principal": {
+        "url":"images/personal-picture.jpg",
+        "title": "John Locke - Full Stack Web Developer",
+        "alt": "John Locke"
+      }
+    },
+    "email": "contact@tecnual.com",
+    "phone": "(+48) 151 62 34 20",
+    "website": "http://onlineResume.tecnual.com",
+    "summary": "Quisque feugiat ante nec rhoncus varius. Curabitur sagittis urna leo, eu semper nulla aliquet eget. Cras commodo a risus vel interdum. Aliquam egestas enim in orci luctus ultricies. Curabitur velit felis, porttitor in risus sit amet, tincidunt finibus dolor. Maecenas sed sapien est. Etiam quis neque interdum, ultrices enim ac, hendrerit ante. In egestas ut purus id pharetra. ",
+    "location": {
+      "address": "The Cloud, 44 2ºB",
+      "postalCode": "24007",
+      "city": "León",
+      "countryCode": "ES",
+      "region": "León",
+      "country": "España"
+    },
+    "profiles": [{
+      "network": "Twitter",
+      "username": "@tecnual",
+      "url": "http://twitter.com/tecnual",
+      "icon": "twitter"
+    },
+    {
+      "network": "Google+",
+      "username": "@tecnual",
+      "url": "https://plus.google.com/+tecnual/",
+      "icon": "google-plus"
+    },
+    {"network": "Facebook",
+    "username": "tecnual",
+    "url": "https://www.facebook.com/tecnual",
+    "icon": "facebook"
+
+      },
+      {"network": "GitHub",
+      "username": "Tecnual",
+      "url": "https://github.com/tecnual",
+      "icon": "github"
+      }
+    ]
+  },
+  "experience": [{
+    "company": "Tecnual",
+    "companyLogo": "images/logo-tecnualBW.jpg",
+    "position": "CEO",
+    "website": "http://tecnual.com",
+    "startDate": "2006-01-01",
+    "endDate": "present",
+    "summary": "Fundador de la compañía en 2006",
+    "highlights": [
+      "Fundador de la compañía en 2006"
+    ]
+  },
+  {
+    "company": "dharma initiative",
+    "companyLogo": "images/logo-dharma.jpg",
+    "position": "technical support",
+    "website": "",
+    "startDate": "2004-09-22",
+    "endDate": "2010-05-23",
+    "summary": "Etiam diam velit, eleifend vel imperdiet in, malesuada a magna. Praesent vitae sodales magna. Nulla gravida lorem gravida, ultrices dui quis, ullamcorper mauris. Sed elementum nunc nec varius luctus. Nam id dapibus erat, et tristique tortor. Sed tincidunt nulla vitae erat ultricies, et pulvinar mauris venenatis. Integer et efficitur diam. Donec vel lorem tortor. ",
+    "highlights": [
+      "Etiam diam velit, eleifend vel imperdiet in, malesuada a magna. Praesent vitae sodales magna. Nulla gravida lorem gravida, ultrices dui quis, ullamcorper mauris. Sed elementum nunc nec varius luctus. Nam id dapibus erat, et tristique tortor. Sed tincidunt nulla vitae erat ultricies, et pulvinar mauris venenatis. Integer et efficitur diam. Donec vel lorem tortor. "
+    ]
+  },
+  {
+    "company": "Box Inc.",
+    "companyLogo": "images/logo-box.png",
+    "position": "Analist",
+    "website": "",
+    "startDate": "2000-02-01",
+    "endDate": "2004-06-31",
+    "summary": "In sed dictum massa, quis porttitor purus. Ut imperdiet leo viverra nulla sagittis mollis. Cras non enim nec leo gravida tempor. In nisl augue, feugiat in tristique nec, imperdiet quis arcu. Sed eget dui vitae neque luctus tincidunt in eu erat. Integer non risus nec ante sodales cursus. ",
+    "highlights": [
+      "In sed dictum massa, quis porttitor purus. Ut imperdiet leo viverra nulla sagittis mollis. Cras non enim nec leo gravida tempor. In nisl augue, feugiat in tristique nec, imperdiet quis arcu. Sed eget dui vitae neque luctus tincidunt in eu erat. Integer non risus nec ante sodales cursus. "
+    ]
+  },
+  {
+    "company": "Orion",
+    "companyLogo": "images/logo-orion.png",
+    "position": "Master of Puppets",
+    "website": "",
+    "startDate": "1999-09-01",
+    "endDate": "2000-01-31",
+    "summary": "Cras vulputate pretium massa, at laoreet leo pulvinar eget. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Phasellus gravida, est eget dapibus dignissim, metus sem tincidunt libero, ac finibus turpis dolor tincidunt tellus.",
+    "highlights": [
+      "Cras vulputate pretium massa, at laoreet leo pulvinar eget. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Phasellus gravida, est eget dapibus dignissim, metus sem tincidunt libero, ac finibus turpis dolor tincidunt tellus."
+    ]
+  }
+],
+  "education": [{
+    "institution": "Univerity of life",
+    "area": "Computer Science",
+    "studyType": "Mooc",
+    "courses": [
+      {
+        "title": "Master in Life Sciences and Technologies",
+        "url": "",
+        "studyType": "Mooc",
+        "startDate": "2015-05-14",
+        "endDate": "2015-06-01",
+        "summary": "Ut pharetra ornare enim non efficitur. Maecenas sed tincidunt velit. Nunc dictum ultricies justo at vulputate. In varius tortor odio, eget mattis neque tempor eu.",
+        "gpa": "100%",
+        "tags": ["life","university","experience", "be yourself"]
+      }
+    ]
+  },{
+    "institution": "Univerity of life",
+    "area": "Computer Science",
+    "studyType": "Mooc",
+    "courses": [
+      {
+        "title": "Master in Life Sciences and Technologies",
+        "url": "",
+        "studyType": "Mooc",
+        "startDate": "2015-05-14",
+        "endDate": "2015-06-01",
+        "summary": "Ut pharetra ornare enim non efficitur. Maecenas sed tincidunt velit. Nunc dictum ultricies justo at vulputate. In varius tortor odio, eget mattis neque tempor eu.",
+        "gpa": "100%",
+        "tags": ["life","university","experience", "be yourself"]
+      }
+    ]
+  },{
+    "institution": "Univerity of life",
+    "area": "Computer Science",
+    "studyType": "Mooc",
+    "courses": [
+      {
+        "title": "Master in Life Sciences and Technologies",
+        "url": "",
+        "studyType": "Mooc",
+        "startDate": "2015-05-14",
+        "endDate": "2015-06-01",
+        "summary": "Ut pharetra ornare enim non efficitur. Maecenas sed tincidunt velit. Nunc dictum ultricies justo at vulputate. In varius tortor odio, eget mattis neque tempor eu.",
+        "gpa": "100%",
+        "tags": ["life","university","experience", "be yourself"]
+      }
+    ]
+  }],
+  "skills": [{
+    "name": "Linux (sysAdmin)",
+    "level": "90",
+    "keywords": [
+      "linux",
+      "sysAdmin",
+      "openSource"
+    ]
+  },
+  {
+    "name": "javaScript",
+    "level": "85",
+    "keywords": [
+      "javaScript",
+      "ES6",
+      "Good Parts"
+    ]
+  },
+  {
+    "name": "HTML5",
+    "level": "95",
+    "keywords": [
+      "HTML5",
+      "frontEnd"
+    ]
+  },
+  {
+    "name": "CSS",
+    "level": "90",
+    "keywords": [
+      "CSS3",
+      "Sass",
+      "Less"
+    ]
+  },
+  {
+    "name": "Node.js",
+    "level": "85",
+    "keywords": [
+      "backEnd",
+      "Node.js",
+      "Express.js",
+      "Mean"
+    ]
+  },
+  {
+    "name": "MongoDB",
+    "level": "85",
+    "keywords": [
+      "DBA",
+      "Mongodb",
+      "DBD",
+      "noSQL",
+      "bigData"
+    ]
+  },
+  {
+    "name": "Angular.js",
+    "level": "85",
+    "keywords": [
+      "Angular.js",
+      "Framework"
+    ]
+  },
+  {
+    "name": "Gimp",
+    "level": "75",
+    "keywords": [
+      "Design",
+      "Creative"
+    ]
+  },
+  {
+    "name": "Photoshop",
+    "level": "75",
+    "keywords": [
+      "Photography",
+      "retouch"
+    ]
+  },
+  {
+    "name": "openStack",
+    "level": "70",
+    "keywords": [
+      "openStack",
+      "cloudComputing"
+    ]
+  },
+  {
+      "name": "Cisco (CCNA)",
+      "level": "85",
+      "keywords": [
+        "Networking",
+        "Routing",
+        "Certificate"
+      ]
+  }
+  ],
+  "languages": [{
+    "language": "English",
+    "fluency": "B2 Level"
+  }],
+  "interests": [{
+    "name": "Wildlife",
+    "keywords": [
+      "Ferrets",
+      "Unicorns"
+    ]
+  }],
+  "tags": [{
+    "tag": "Linux",
+    "icon": "linux"
+    },
+    {
+      "tag": "javaScript",
+      "icon": "code"
+    },
+    {
+      "tag": "mongoDB",
+      "icon": "database"
+    },
+    {
+      "tag": "gimp",
+      "icon": "picture-o"
+    },
+    {
+      "tag": "Angular.js",
+      "icon": "code"
+    },
+    {
+      "tag": "CISCO",
+      "icon": "code"
+    },
+    {
+      "tag": "AWS",
+      "icon": "amazon"
+    },
+    {
+      "tag": "HTML5",
+      "icon": "html5"
+    },
+    {
+      "tag": "CSS",
+      "icon": "css3"
+    },
+    {
+      "tag": "openStack",
+      "icon": "server"
+    },
+    {
+      "tag": "Cloud Computing",
+      "icon": "cloud"
+    },
+    {
+      "tag": "PHP",
+      "icon": "code"
+    },
+    {
+      "tag": "Social Network",
+      "icon": "share-alt"
+    },
+    {
+      "tag": "Rest Api",
+      "icon": "retweet"
+    },
+    {
+      "tag": "Big Data",
+      "icon": "database"
+    },
+    {
+      "tag": "Comunities",
+      "icon": "users"
+    },
+    {
+      "tag": "Perl",
+      "icon": "code"
+    },
+    {
+      "tag": "Mysql",
+      "icon": "database"
+    },
+    {
+      "tag": "Sass",
+      "icon": "code"
+    },
+    {
+      "tag": "Google Material Design",
+      "icon": "picture"
+    },
+    {
+      "tag": "Bootstrap",
+      "icon": "database"
+    },
+    {
+      "tag": "Redmine",
+      "icon": "calendar"
+    },
+    {
+      "tag": "Bind9",
+      "icon": "globe"
+    },
+    {
+      "tag": "CCNA",
+      "icon": "share-alt"
+    }
+  ],
+  "references": [{
+    "name": "",
+    "reference": ""
+  }]
+}

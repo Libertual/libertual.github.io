@@ -5,7 +5,7 @@
     "birthdate": "1977-08-12T23:10:00.000Z",
     "pictures": {
       "principal": {
-        "url":"/images/PedroMaciasFullStackDeveloper.jpg",
+        "url":"images/PedroMaciasFullStackDeveloper.jpg",
         "title": "Pedro Macías - Full Stack Web Developer",
         "alt": "Pedro Macías"
       }
@@ -13,7 +13,7 @@
     "email": "pedro@tecnual.com",
     "phone": "(+34) 633 36 40 80",
     "website": "http://libertual.github.io",
-    "summary": "Hola, Soy programador y administrador de sistemas en León, España. Trabajo con experiencia en entornos de desarrollo para aplicaciones web, gestion de proyectos de investigación e innovación.",
+    "summary": "Soy programador y administrador de sistemas en León, España. Trabajo con experiencia en entornos de desarrollo para aplicaciones web, gestion de proyectos de investigación e innovación.",
     "location": {
       "address": "Los Cubos, 44 2ºB",
       "postalCode": "24007",
