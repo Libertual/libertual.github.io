@@ -108,7 +108,25 @@
     ]
   }
 ],
-  "education": [{
+  "education": [
+	{
+    "institution": "MiriadaX",
+    "area": "Ciencias Tecnológicas",
+    "studyType": "Mooc",
+    "courses": [
+      {
+        "title": "Agilidad y Lean. Gestionando los proyectos y negocios del s. XXI",
+        "url": "https://miriadax.net/files/10132/badge/91cdbd9f-7b1c-4ee3-b5fc-e0e85d6b0910.pdf",
+        "studyType": "Mooc",
+        "startDate": "2016-05-03",
+        "endDate": "2016-06-05",
+        "summary": "Cada vez son más los proyectos que siguen una metodología ágil (Scrum, XP, Crystal Clear, etc.). Su crecimiento ha sido tal que este tipo de gestión es una práctica ya común en multitud de empresas y equipos de desarrollo software. Los profesionales de la tecnología y del desarrollo software de hoy… están obligados conocer cómo se gestionan proyectos ágiles",
+        "gpa": "100%",
+        "tags": ["Agile","Lean","Gestion de Proyectos", "Agilidad", "Scrum","Kanban"]
+      }
+    ]
+  },
+{
     "institution": "MiriadaX",
     "area": "Ciencias Tecnológicas",
     "studyType": "Mooc",
@@ -151,6 +169,7 @@
       }
     ]
   },
+
   {
     "institution": "CICE",
     "area": "Ciencias de la computación",
@@ -216,6 +235,14 @@
     ]
   },
   {
+    "name": "PHP",
+    "level": "90",
+    "keywords": [
+      "PHP",
+      "Zend framework"
+    ]
+  },
+  {
     "name": "HTML5",
     "level": "95",
     "keywords": [
@@ -254,11 +281,32 @@
     ]
   },
   {
+    "name": "MySQL",
+    "level": "85",
+    "keywords": [
+      "DBA",
+      "MariaDB",
+      "DBD",
+      "SQL",
+      "bigData"
+    ]
+  },
+  {
     "name": "Angular.js",
     "level": "85",
     "keywords": [
       "Angular.js",
-      "Framework"
+      "Framework",
+      "JavaScript"
+    ]
+  },
+  {
+    "name": "Ionic",
+    "level": "85",
+    "keywords": [
+      "Angular",
+      "Framework",
+      "JavaScript"
     ]
   },
   {

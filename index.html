@@ -1423,6 +1423,68 @@
                                   </div>
 
                                 </div> <!-- single education end -->
+                              <!-- single education -->
+
+                                <div class="col-sm-4 single-card-box wow fadeInUpSmall" data-wow-duration=".7s">
+
+                                  <div class="card">
+
+                                    <div class="card-image waves-effect waves-block waves-light">
+
+                                      <h2 class="left-align card-title-top">{{resume.education[4].courses[0].endDate | limitTo: 4}}</h2>
+
+                                      <div class="card-img-wrap">
+
+                                        <img class="activator" src="images/grad-cap.png" alt="">
+
+                                      </div>
+
+                                    </div>
+
+                                    <div class="card-content">
+
+                                      <span class="card-title activator brand-text">
+                                        <span ng-repeat="course in resume.education[4].courses">
+                                          {{course.title}}<br>
+                                        </span>
+                                        <i class="mdi-navigation-more-vert right"></i>
+                                      </span>
+
+                                      <p>{{resume.education[4].institution}}</p>
+
+                                    </div>
+
+                                    <!-- Reveal content-->
+
+                                    <div class="card-reveal">
+                                      <div ng-repeat="course in resume.education[4].courses">
+                                      <div class="rev-title-wrap">
+
+                                        <span class="card-title activator brand-text">{{course.title}}<i class="mdi-navigation-close right"></i></span>
+
+                                        <p>{{resume.education[4].institution}}</p>
+
+                                      </div>
+
+                                      <p class="rev-content">
+
+                                        {{course.summary}}
+                                        <br>
+                                        <a href="{{course.url}}"> Mooc </a>
+                                        <br>
+                                        <div  class="tag-cloud">
+                                          <span class="badge" ng-repeat="tag in course.tags">
+                                            {{tag}}
+                                          </span>
+                                        </div>
+                                      </p>
+                                     </div>
+                                    </div>
+
+                                  </div>
+
+                                </div> <!-- single education end -->
+
                         </div>
 
                       </div>
@@ -1677,7 +1739,7 @@
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
 
-  <script type="text/javascript" src="https://maps.google.com/maps/api/js?sensor=true"></script>
+  <script type="text/javascript" src="https://maps.google.com/maps/api/js?sensor=true&key=AIzaSyAsXypctj_oYCkVGsv3KDmxt6su4E783Tc"></script>
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gmaps.js/0.4.21/gmaps.min.js"></script>
 
